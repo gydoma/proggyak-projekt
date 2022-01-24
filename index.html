@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link href="css/fontgrad.css" rel="stylesheet">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/morpher.css">
+    <script src="js/bg-color-morph.min.js"></script>
+    <title>Projektmunka</title>
+</head>
+<body>
+    <div class="bg-morph" data-end-color="#0080FF" data-start-color="00D8FF" data-start-trigger="top" data-end-trigger="bottom" id="main">
+    <div class="uk-animation-scale-down">
+
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left"><div>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="it.html">It</a></li>
+                    </ul>
+                </div></div>
+                <a class="uk-navbar-item uk-logo"><img alt="home" src="res/ch.png" width="32" height="32"></a>
+                <div class="uk-navbar-center-right"><div>
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a>Web</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active">Válassz</li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="web/html.html">HTML</a></li>
+                                    <li><a href="web/css.html">CSS</a></li>
+                                    <li><a href="web/bs.html">Bootstrap</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://chromiumnetwork.com">Főoldal</a></li>
+                    </ul>
+                </div></div>
+            </div>
+        </nav>
+
+        <div class="uk-section">
+            <div class="uk-container">
+                <div class="uk-margin-large-bottom uk-card uk-card-default uk-card-body">
+                    <h1 class="uk-text-center" id="grad">Projekt munka</h1>
+                </div>
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <a href="python.html" class="uk-link-reset"><div class="uk-card-header">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-border-circle" width="40" height="40" src="res/py.png">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove-bottom">Python</h3>
+                                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2020-12-13T18:30">2021 December 13.</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <p>A Python egy nyílt forráskódú programozási nyelv, leginkább a Ruby és JavaScript nyelvhez hasonlít. Amiben különbözik a Python a többi nyelvtől ...</p>
+                            </div>
+                            <div class="uk-card-footer">
+                                <a href="python.html" class="uk-button uk-button-text">Katt ide!</a>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default" onclick="UIkit.notification({message: '<span uk-icon=\'icon: warning\'></span> Válassz témát!', timeout:'1000', status:'danger'})">
+                            <div class="uk-card-header">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-border-circle" width="40" height="40" src="res/web.png">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove-bottom">Web</h3>
+                                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2022-01-01T13:45">2022 Január 13.</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <p>Készítette:</p>
+                                    <ul>
+                                        <li>Dávid Benedek</li>
+                                        <li>Fehér Levente</li>
+                                        <li>Laczkó Andris</li>
+                                    </ul>
+                            </div>
+                            <div class="uk-card-footer">
+                                <button class="uk-button uk-button-text" type="button">Válassz témát!</button>
+                                <div uk-dropdown>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-nav-header">Web</li>
+                                        <li><a href="web/html.html">HTML</a></li>
+                                        <li><a href="web/css.html">CSS</a></li>
+                                        <li><a href="web/bs.html">Bootstrap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <a href="it.html" class="uk-link-reset"><div class="uk-card-header">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-border-circle" width="40" height="40" src="res/it.png">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove-bottom">IT</h3>
+                                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2022-01-08T15:00">2022 Január 8.</time></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <p>Pc archhitek </h1>
+                                    Az első számítógépet személyi számítógépnek (pc) hívták. Ami nem egy központi számítógép terminálja egy személy által kezelt ...</p>
+                            </div>
+                            <div class="uk-card-footer">
+                                <a href="it.html" class="uk-button uk-button-text">Katt ide!</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        <hr class="uk-divider-icon">
+
+            <footer>
+                <div class="uk-container">
+                    <div class="uk-child-width-1-2@m uk-grid-match uk-child-width-expand@m" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                                <h3 class="uk-card-title">Információ</h3>
+                                <p id="info">Projektmunka, készült 2022.0x.xx.</p><hr><p>Ezen az oldalon megtalálhatod, a középiskolai tananyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból. A teljes weboldal elkészítése rengeteg időt vett igénybe nekünk. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p>
+                                <hr>
+                                <div class="uk-child-width-1-4@m" uk-grid>
+                                    <p class="uk-text-center"><a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p>
+                                    
+                                        <img class="uk-visible@m" alt="built-with-love" src="https://forthebadge.com/images/badges/built-with-love.svg"> 
+                                        <img  class="uk-visible@m" alt="not-a-bug-a-feature" src="https://forthebadge.com/images/badges/not-a-bug-a-feature.svg" >
+                                        <span class="uk-text-center"><p>Vissza az oldal tetejére<a href="#" title="Go back" uk-totop uk-scroll></a></p> </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+            </footer>
+
+        </div>
+        
+    </div>
+    </div>
+    
+</body>
+</html>
