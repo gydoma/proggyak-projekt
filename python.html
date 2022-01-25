@@ -70,7 +70,9 @@
                                         <li>Toolips</li>
                                         <li>Labelling</li>
                                         <li>Jobb Title (Még mindig naon gáz) <span class="uk-margin-small-right uk-text-success" uk-icon="check"></span></li>
-                                        <br>
+                                        <li>Operátoroknál szöveges gridet valahogy nestelni vagy mittudomén mit csinálni vele de ne legyen ennyire túl csonk <span class="uk-margin-small-right uk-text-danger" uk-icon="close"></span></li>
+                                        <li>Esetleges quiz akármi 3 választós, 1 fejezetbe való, talán az oldal aljára de akkor témák végén egy link vagy button, elsőnél lehet hover item</li>
+                                        <li>Ennek a szarnak a helyére ha Kitty nem csinál semmit: miért jó ezt a nyelvet tanulni, mire jó, cmd-webapp..</li>
                                         <li>Elágazások: if/elif/else <span class="uk-margin-small-right uk-text-danger" uk-icon="close"></span></li>
                                         <li>C: while</li>
                                         <li>eljárások, függvények <span class="uk-margin-small-right uk-text-warning" uk-icon="star"></span></li>
@@ -116,51 +118,40 @@ print(szöveg) #Error
                     </div>
                 </div>
 
-                <!--<div class="uk-child-width-expand@m uk-grid-match" uk-grid>
+                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>1.1 Operátorok</a></h3>
                             <p>Az operátorok olyan elemi műveletek amikre a programozási nyelv képes. Amikor programot írsz, akkor ezeknek az egyszerű műveleteknek a véges sorozatát írod le. Ahhoz pedig hogy abból egy jól működő program legyen csupán a logikádat kell majd használni.</p>
                             <hr class="uk-divider-icon">
                             <h4>Összehasonlító operátorok</h4>
-                            <div class="uk-grid-column-collapse@m uk-child-width-1-3 uk-text-center" uk-grid>
+                            <div class="uk-grid-column-collapse@m uk-child-width-1-2 uk-text-center" uk-grid>
                                 <div>Operátor Jele </div>
                                 <div>Operátor Neve</div>
-                                <div>Használata</div>
                                 <div>==</div>
                                 <div>Egyenlő</div>
-                                <div>if 5==5: print('Igaz')</div>
                                 <div>=!</div>
                                 <div>Nem Egyenlő</div>
-                                <div>if 5=!3: print('Igaz')</div>
                                 <div>&lt;</div>
                                 <div>Kisebb</div>
-                                <div>if 5&lt;10: print('Igaz')</div>
                                 <div>&gt;</div>
                                 <div>Nagyobb</div>
-                                <div>if 10&gt;5: print('Igaz')</div>
                                 <div>&lt;=</div>
                                 <div>Kisebb Vagy Egyenlő</div>
-                                <div>if 5&lt;=10: print('Igaz')</div>
                                 <div>&gt;=</div>
                                 <div>Nagyobb vagy Egyenlő</div>
-                                <div>if 5&gt;=5: print('Igaz')</div>
                             </div>
                             <hr class="uk-divider-icon">
                             <h4>Logikai operátorok:</h4>                                
-                            <div class="uk-grid-column-collapse@m uk-child-width-1-3 uk-text-center" uk-grid>
+                            <div class="uk-grid-column-collapse@m uk-child-width-1-2 uk-text-center" uk-grid>
                                 <div>Operátor Jele </div>
                                 <div>Operátor Neve</div>
-                                <div>Használata</div>
                                 <div>and</div>
                                 <div>És</div>
-                                <div>if 2&gt;1 and 3&gt;2: print('Igaz')</div>
                                 <div>or</div>
                                 <div>Vagy</div>
-                                <div>if 2&gt;1 or 1=!1: print('Igaz')</div>
                                 <div>not</div>
                                 <div>Nem</div>
-                                <div>if 3 not 1: print('Igaz')</div>
                         </div>
                         <hr class="uk-divider-icon">
                         <p>A következő témákban már előfordulnak az operátorok használata, fontos ismerni ezeket mert nélkülük nehéz dolgod lesz.</p>
@@ -169,9 +160,66 @@ print(szöveg) #Error
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                         <p>TODO: <hr> Kódot írni ezekre a dolgokra illetve nem tudom mi legyen a táblázatba lévő használata oszloppal, nem szeretném kivenni viszont lehet fasság lenne kétszer ugyan azt leírni tehát passz.</p>
-                        </div>
+                        <pre class="line-numbers"><code class="language-python">x = 10
+y = 15
+# Itt bekérünk a usertől egy int-et
+inp = input(Int bekérés: )
+
+
+# == - Akkor fut le ha az inp egyenlő x-el
+if x == inp: print(Igaz)
+else: print(Hamis)
+
+# =! - Akkor fut le ha az inp nem = x-el
+if x =! inp: print(Igaz)
+else: print(Hamis)
+# az 'is not' is megfelelő az =! helyére
+
+
+# &lt; - Akkor fut le ha az inp nagyobb x-nél
+if x &lt; inp: print(Igaz)
+else: print(Hamis)
+
+# &gt; - Akkor fut le ha az inp kisebb x-nél
+if x &gt; inp: print(Igaz)
+else: print(Hamis)
+
+
+# &lt;= - Ha az inp nagyobb v. egyenlő x-el
+if x &lt;= inp: print(Igaz)
+else: print(Hamis)
+
+# &gt;= - Ha az inp kisebb v. egyenlő x-el
+if x &gt;= inp: print(Igaz)
+else: print(Hamis)
+
+
+# and - Ha mindkét kritérium igaz
+if x == inp and y == x: print(Igaz)
+else: print(Hamis)
+# Itt hamis lesz, mivel az y nem egyenlő x-el
+
+# or - Ha csak az egyik kritérium igaz
+if x == inp or y == inp: print(Igaz)
+else: print(Hamis)
+# Ha a bekért szám megegyezik x-el vagy y-al
+# Akkor fut csak le
+
+# not - Akkor fut le ha egyik kritérium se igaz
+# meg tud fordítani egy 'and' operátort
+if not(x == inp and x == x): print(Igaz)
+else: print(Hamis)
+#output: Hamis
+
+
+
+#Végtelen ciklus (amiből egyből kilépünk)
+while True:
+    break
+</code></pre>
                     </div>
-                </div>-->
+                    </div>
+                </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
