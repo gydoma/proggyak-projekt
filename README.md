@@ -31,7 +31,7 @@ Többiek
 - [ ] megszámlálás
 - [ ] szélsőérték
 - [ ] keresés 
-- [ ] __xyz__ 
+- [ ] \_\_xyz\_\_
 
 Készítette:
 
