@@ -7,7 +7,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
 IKT Projektmunka 10. Évfolyam
-Az oldalunkat a weboldalunkon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/.
+Az oldalunkat a weboldalunkon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
 
 ## Python
 
