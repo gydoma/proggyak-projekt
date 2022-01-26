@@ -158,13 +158,10 @@ print(szöveg) #Error
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                        <p>TODO: <hr> Kódot írni ezekre a dolgokra illetve nem tudom mi legyen a táblázatba lévő használata oszloppal, nem szeretném kivenni viszont lehet fasság lenne kétszer ugyan azt leírni tehát passz.</p>
                         <pre class="line-numbers"><code class="language-python">x = 10
 y = 15
 # Itt bekérünk a usertől egy int-et
 inp = input(Int bekérés: )
-
 
 # == - Akkor fut le ha az inp egyenlő x-el
 if x == inp: print(Igaz)
@@ -175,7 +172,6 @@ if x =! inp: print(Igaz)
 else: print(Hamis)
 # az 'is not' is megfelelő az =! helyére
 
-
 # &lt; - Akkor fut le ha az inp nagyobb x-nél
 if x &lt; inp: print(Igaz)
 else: print(Hamis)
@@ -184,7 +180,6 @@ else: print(Hamis)
 if x &gt; inp: print(Igaz)
 else: print(Hamis)
 
-
 # &lt;= - Ha az inp nagyobb v. egyenlő x-el
 if x &lt;= inp: print(Igaz)
 else: print(Hamis)
@@ -192,7 +187,6 @@ else: print(Hamis)
 # &gt;= - Ha az inp kisebb v. egyenlő x-el
 if x &gt;= inp: print(Igaz)
 else: print(Hamis)
-
 
 # and - Ha mindkét kritérium igaz
 if x == inp and y == x: print(Igaz)
@@ -211,13 +205,11 @@ if not(x == inp and x == x): print(Igaz)
 else: print(Hamis)
 #output: Hamis
 
-
-
 #Végtelen ciklus (amiből egyből kilépünk)
 while True:
     break
 </code></pre>
-                    </div>
+                    
                     </div>
                 </div>
 
@@ -365,7 +357,7 @@ os.system('clear')
 for i in range(szam):
     print(szam)
     szam = szam + 1
-#Eredmény: 5x megnöveli a számot 1-el</code></pre>
+#output: ötször megnöveli a számot 1-el</code></pre>
                     </div>
                 </div>
 
@@ -381,9 +373,9 @@ for i in range(szam):
 while szam &#60;= 10:
     print(szam)
     szam =+ 1
-#Eredmény: Megnöveli a számot 1-el, 
-#          ameddig a szám nem nagyobb,
-#          vagy egyenlő 10-el
+#output: Megnöveli a számot 1-el, 
+#        ameddig a szám nem nagyobb,
+#        vagy egyenlő 10-el
 </code></pre>
                     </div>
                 </div>
@@ -423,7 +415,8 @@ for i in range(len(allatok)):
                         <pre class="line-numbers"><code class="language-python">allatok = ['macska', 'kutya', 'víziló', 'zsiráf', 'hörcsög'] 
 
 for i in range(len(allatok)): 
-    print(allatok[i]) </code></pre>
+    print(allatok[i]) 
+#output: külön sorba a lista összes elemét</code></pre>
                     </div>
                 </div>
 
