@@ -38,7 +38,7 @@ Készítette:
 - Balogh Tamás
 - Digruber Eszter
 - Digruber Emese
-- Gyurkovics Dominik * Projektvezető *
+- Gyurkovics Dominik: Projektvezető
 - Kerti János
 - Kormon Kitty
 - Kósa Márk
