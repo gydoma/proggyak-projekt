@@ -154,7 +154,7 @@ print(szöveg) #Error
                                 <div>Nem</div>
                         </div>
                         <hr class="uk-divider-icon">
-                        <p>A következő témákban már előfordulnak az operátorok használata, fontos ismerni ezeket mert nélkülük nehéz dolgod lesz.</p>
+                        <p><span class="uk-label uk-label-danger">Figyelj oda!</span> A következő témákban már előfordulnak az operátorok használata, fontos ismerni ezeket mert nélkülük nehéz dolgod lesz.</p>
                         </div>
                     </div>
                     <div>
@@ -217,7 +217,7 @@ while True:
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>2.1 Elágazások: if</h3>
-                            <p>Az if utasítás használatával megtudod nézni hogyha valami igaz vagy hamis, például<code>5 > 2</code>.</p><p>Hogyha egy boolean összegnek az eredményét akarod megnézni, és az összege True, akkor nem kell <code>if x == True:</code>, elég <code>if x:</code>, mert a Python mindig True összeget nézi meg elsőnek, ha nincsen megadva feltétel.</p>
+                            <p>Az if utasítás használatával megtudod nézni hogyha valami igaz vagy hamis, például<code>5 > 2</code>.</p><p><span class="uk-label">Jó tudni</span> Hogyha egy boolean összegnek az eredményét akarod megnézni, és az összege True, akkor nem kell <code>if x == True:</code>, elég <code>if x:</code>, mert a Python mindig True összeget nézi meg elsőnek, ha nincsen megadva feltétel.</p>
                         </div>
                     </div>
                     <div>
@@ -234,7 +234,7 @@ print("Az x igaz")
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3>2.2 Elágazások: if else / elif</h3>
+                            <h3>2.2 Elágazások: if else / elif  <span class="uk-label uk-label-danger">Hiányos</span></h3>
                             <p>Else / Elif utasítást csak <code>if</code> utasítás után tudsz használni, hogyha valami nem igaz az <code>if</code> utasításba nem fut le, hanem átmegy az <code>else</code> utasításra</p>
                         </div>
                     </div>
@@ -260,7 +260,7 @@ else: print('ez meg már nem fog lefutni')</code></pre>
                             <p>Mik azok a könyvtárak és miket tudsz velük csinálni?<br>
                                 A Python nyelv gyorsasága érdekében egyes függvényeket egy bizonyos <code>import</code> parancsal lehet csak aktiválni és majd azokat később felhasználni.<br>
                                 Rengeteg hasznos könyvtár van alapból a pythonnal telepítve,<br>
-                                Mindegyik könyvtárból importált függvényt úgy kell írni, hogy a könyvtár nevét egy pontot és a függvény nevét írjuk le például <code>random.randint()</code> amennyiben ez nehézségünkre esik vagy gyorsítani akarjuk a kódunkat használjuk a <code>from [Könyvtárnév] import [Függvény1, függvény2]</code> parancsot így már nem kell a könyvtár nevét is kiiírni úgy szint a pontot se. Ha esetleg több függvény kellene az adott könyvtárból alkalmazzunk könyvtár rövidítéseket: <code>import [Könyvtár Neve] as [Rövidítés]</code> a rövidítést kitalálhatjuk mi és a teljes könyvtár kiírása helyett csak azt kell leírnunk.</p>
+                                Mindegyik könyvtárból importált függvényt úgy kell írni, hogy a könyvtár nevét egy pontot és a függvény nevét írjuk le például <code>random.randint()</code> <br><span class="uk-label">rövidítsünk!</span> A <code>from [Könyvtár] import [függvény, ...]</code> paranccsal már nem kell a könyvtár nevét is kiiírni úgy szint a pontot se ha elő akarjuk hívni a könyvtárakban lévő függvényeket. Ha esetleg több függvény kellene az adott könyvtárból alkalmazzunk könyvtár rövidítéseket: <code>import [Könyvtár Neve] as [Rövidítés]</code> a rövidítést kitalálhatjuk mi és a teljes könyvtár kiírása helyett csak azt kell leírnunk.</p>
                         
                                 <p>Most, hogy már tudjuk hogyan kell importáni ezeket nézzük meg a leggyakoribb könyvtárakat:</p>
                                 <dl class="uk-description-list">
@@ -393,7 +393,7 @@ while szam &#60;= 10:
 
 print(honapok[0]) #output: január
 
-allatok = ['macska', 'kutya', 'víziló', 'hörcsög']
+allatok = ['macska','kutya','víziló','hörcsög']
 
 print(len(allatok)) #output: 4
 
@@ -412,7 +412,7 @@ for i in range(len(allatok)):
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">allatok = ['macska', 'kutya', 'víziló', 'zsiráf', 'hörcsög'] 
+                        <pre class="line-numbers"><code class="language-python">allatok = ['macska','kutya','víziló','zsiráf','hörcsög'] 
 
 for i in range(len(allatok)): 
     print(allatok[i]) 
@@ -423,7 +423,7 @@ for i in range(len(allatok)):
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3>6.1 Eljárások</h3>
+                            <h3>6.1 Eljárások <span class="uk-label uk-label-danger">Hiányos</span></h3>
                             <p>Láthatóbbá is tudod tenni a kódodat, könnyebben kezelhetővé, eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code> ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni. </p>
                         </div>
                     </div>
@@ -445,7 +445,7 @@ def udvozol(nev):
     print('A nevem '+ nev +', és a tiéd?')
 
 #main.py
-koszont_nevvel('Ádám') 
+udvozol('Ádám') 
 #Eredmény: 'Szia Ádám, légy üdvözölve!'
 </code></pre>
                     </div>
@@ -480,9 +480,8 @@ ar = festek_kalkulator(5, 2) * 700
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3>6.2 Beépített függvények</h3>
+                            <h3>6.2 Beépített függvények <span class="uk-label uk-label-success">WIP</span></h3>
                             <p class='uk-text-italic uk-text-lighter'>Kódforrást tekintsd meg!</p>
-
                             <!--<p>A Python számos beépített függvénnyel rendelkezik, amikkel most megmutatjuk mikkel ismerkedtünk már meg ededig:<br>
                             -sum(iterable, start=0) Visszaadja a két elem összegét. Csak szám típusú paramétert lehet neki megadni, tehát nem lehet például stringek konkatenálására használni.<br>
                             -range(start [,end [, lépés]])A !LT= start és !GT end értékek közötti egész számokból képzett listát ad vissza értékül.Egy argumentummal, lista 0-tól ..<argumentum>-1 értékig.Két argumentummal, lista <start> értéktõl..<end>-1 értékig.Három argumentummal, lista <start> értéktõl <end> értékig <lépés>- sel.<br>
