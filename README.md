@@ -52,6 +52,21 @@ Készítette:
 - Fehér Levente
 - Laczkó Andris
 
+### Feladaitok:
+#### HTML
+- [ ] pls segitsetek laczkonak a htmlben mert kurvara nem ert hozza
+- [ ] kellene HTMLből az összes gyakori tag leírása pl: p h1-h7 img div br hr a b i... (emlékeztető használjátok a \&lt; (Less Than <) és \&gt; (Greater Than >) karakter kódokat, hogy a tageket jól megtudjátok csinálni és ne zárójelekben legyen mint most. 
+- [ ] ugyszint a felepitese a doksinak hogy viewport body head html utf-8 ...
+#### CSS
+- [ ] rohadt csonk és minimum 40 szabályt kellene írni nem csak kettőt
+- [ ] classekre, pseuedo és id-kre is terjedjetek ki
+- [ ] nyelvtani hibák
+#### Bootstrap
+- [ ] ne legyen lorem ipsumos rész hanem magyarázzátok el hogy mi mit csinál vagy írjátok azt hogy placeholder/item 1-2...
+- [ ] több dolog is van itt nem csak ennyi, szóval ez is kurvára csonk
+- [ ] nyelvtani hibák (ne magázz, vagy fogalmazd újra az egészet vagy nemtudom)
+- [ ] terjedj ki arra hogy lehet csinálni sajátot is (bootstrapmade.com)
+
 ## IT
 
 Készítette:
@@ -61,7 +76,10 @@ Készítette:
 - Gáspár Lajos
 - Győri Botond
 
+- [ ] Ahogy a tanárúr is mondta a tech szingularitásról órákat lehetne beszélni remélem figyeltetek hogy miket lehetne belerakni
+- [ ] verziókezelőket kérlek kicsit nézzétek át és írjatok többet
+- [ ] it karbantartás: a tisztítással kicsit fogalkozz többet mert így a faszse fogja tudni mi az az LSD porszívó xd
 
 ## Hálózat ismeretek 
 
-~~ Nothing here ~~
+őszintén mivel nem voltam ott amikor kiosztották a feladatot rohadtul nem tudom hogy ez majd kell e vagy nem szo pls help me
