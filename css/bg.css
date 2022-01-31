@@ -1,0 +1,12 @@
+
+body{ 
+    background-image: url(../res/tile.gif);
+    background-size: 115%;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 40s linear infinite;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
