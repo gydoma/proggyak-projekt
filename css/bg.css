@@ -1,4 +1,4 @@
-
+/* 
 body{ 
     background-image: url(../res/tile.gif);
     background-size: 115%;
@@ -9,4 +9,4 @@ body{
 @keyframes animatedBackground {
 	from { background-position: 0 0; }
 	to { background-position: 100% 0; }
-}
+} */
