@@ -16,7 +16,7 @@
     <title>Projektmunka / Python</title>
     <meta name="description" content="Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból.">
 </head>
-<body class="match-braces uk-background-secondary">
+<body class="match-braces uk-background-secondary uk-animation-scale-down">
     <div>
     <div class="bg-morph" data-end-color="#0090ff" data-start-color="00D8FF" data-start-trigger="top" data-end-trigger="bottom" id="main">
     <!--<div class="uk-animation-scale-down">-->
@@ -147,7 +147,7 @@ print(szöveg) #Error
                         <pre class="line-numbers"><code class="language-python">x = 10
 y = 15
 # Itt bekérünk a usertől egy int-et
-inp = input(Int bekérés: )
+inp = int(input(Kérek egy természetes számot: ))
 
 # == - Akkor fut le ha az inp egyenlő x-el
 if x == inp: print(Igaz)
@@ -242,7 +242,7 @@ else: print('ez meg már nem fog lefutni')</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>3.1 Könyvtárak <a id="szoveg4" href="#kod4" title="4. Code" uk-icon="icon: code" uk-scroll ></a></h2>
+                            <h2>3.1 Könyvtárak</h2>
                             <p>Mik azok a könyvtárak és miket tudsz velük csinálni?<br>
                                 A Python nyelv gyorsasága érdekében egyes függvényeket egy bizonyos <code>import</code> parancsal lehet csak aktiválni és majd azokat később felhasználni.<br>
                                 Rengeteg hasznos könyvtár van alapból a pythonnal telepítve,<br>
@@ -278,7 +278,9 @@ else: print('ez meg már nem fog lefutni')</code></pre>
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">from math import pi, sqrt, pow
+                        <pre class="line-numbers"><code class="language-python">#math - matee-matiii-kaaaa
+
+from math import pi, sqrt, pow
 
 #a matematikai PI kiprintelése:
 print(pi)
@@ -300,6 +302,8 @@ print(pow(2.0, 8))
 #output: 81.0
 #        30.25
 #        256.0
+</code></pre>
+<pre class="line-numbers"><code class="language-python">#random - véletlenek előfordulnak.
 
 import random as rnd
 
@@ -313,11 +317,15 @@ print(rnd.random(1, 100))
 
 print(rnd.randrange(1, 3))
 #output: 1 vagy 2
+</code></pre>
+<pre class="line-numbers"><code class="language-python">#time - a kódnak is kell a pihi nem csak neked...
 
 from time import sleep
 
 time.sleep(5)
 #output: semmi nem történik 5mp-ig
+</code></pre>
+<pre class="line-numbers"><code class="language-python">#os - csak nehogy a system32-t töröld!
 
 import os
 
@@ -393,8 +401,8 @@ for i in range(len(allatok)):
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>5.2 Listák</h2>
-                            <p>Egy <code>for</code> ciklus segítségével betudod járni a listát, azaz minden egyes elemét végig járni, és csinálni valamit velük. Ebben az esetben felsoroltatjuk egy-egy sorba az összes elemt a listában. A <code>len()</code> függvénnyel a 6.3as részben fogsz találkozni</p>
+                            <h2>5.2 Listák körbejárása</h2>
+                            <p>Egy <code>for</code> ciklus segítségével betudod járni a listát, azaz minden egyes elemét végig járni, és csinálni valamit velük. Ebben az esetben felsoroltatjuk egy-egy sorba az összes elemet a listában. A <code>len()</code> függvénnyel a 6.3as részben fogsz találkozni</p>
                         </div>
                     </div>
                     <div>
@@ -409,7 +417,7 @@ for i in range(len(allatok)):
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.1 Eljárások</h2>
+                            <h2>6.1 Eljárások <span class="uk-label uk-label-danger">Haladó</span></h2>
                             <p>Láthatóbbá tudod tenni a kódodat illetve, könnyebben kezelhetővé az eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code> ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni.</p>
                             <p>Amikor egy eljárást szeretnénk csinálni el kell döntenünk hogy szeretnénk paramétereket kérni és ha igen, milyen paramétert kérjünk, be. Például ha csak egy integert szeretnénk a függvényünk neve után így tudjuk jelezni a gépnek, hogy csak integert fogad el: <code>def szam() -&gt; int:</code>
                             <p>Amennyiben kódunkban nem printelni fogunk hanem például egy új változót csinálni akkor a függvény definiálása után <code>return változó_neve</code> kódsort alkalmazzuk</p>
@@ -443,7 +451,7 @@ udvozol('Ádám')
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.2 Függvények</h2>
+                            <h2>6.2 Függvények <span class="uk-label uk-label-danger">Haladó</span></h2>
                             <p>A függvény meghatározása nagyon egyszerű: ez egy kis kódrészlet, ami valami specifikus feladatot lát el.</p><p>A függvény az utasítások olyan blokkja, ami végrehajtja a benne meghatározott művelet(ek)et, és miután lefutott, 
                                 tetszőlegesen újra hívható, futtatható.</p><p> A függvények modulárisabbá, áttekinthetőbbé teszik a kódot, lehetővé téve ugyanazon kódrészlet (függvény) újra és újra használatát.</p>
                         </div>
@@ -469,14 +477,14 @@ ar = festek_kalkulator(5, 2) * 700
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.2 Beépített függvények <span class="uk-label uk-label-success">WIP</span></h2>
+                            <h2>6.2 Beépített függvények <span class="uk-label uk-label">WIP</span></h2>
                             <p class='uk-text-italic uk-text-lighter'>Kódforrást tekintsd meg!</p>
                             <!--<p>A Python számos beépített függvénnyel rendelkezik, amikkel most megmutatjuk mikkel ismerkedtünk már meg ededig:<br>
                             -sum(iterable, start=0) Visszaadja a két elem összegét. Csak szám típusú paramétert lehet neki megadni, tehát nem lehet például stringek konkatenálására használni.<br>
                             -range(start [,end [, lépés]])A !LT= start és !GT end értékek közötti egész számokból képzett listát ad vissza értékül.Egy argumentummal, lista 0-tól ..<argumentum>-1 értékig.Két argumentummal, lista <start> értéktõl..<end>-1 értékig.Három argumentummal, lista <start> értéktõl <end> értékig <lépés>- sel.<br>
                             -list([iterable]) Létrehoz egy új lista objektumot, amelynek az elemei ugyanazok, mint az iterable elemei.<br>
                             -input([prompt]) Kiírja a prompt jelet, ha megadtuk. Beolvassa az input jelet és kiértékeli.<br>
-                            -int(x) Egy számot sima egész számmá (<code>int</code>) konvertál.<br>
+                            -int(x) Egy számot sima egész számmá (<code>int</code>) konvertál. (amennyiben nem szám, hanem pl szöveg akkor hibát ír)<br>
                             -float(x) Az x számot lebegõpontos számmá konvertálja. Ez a függvény még akkor is hasznos, ha stringként adunk meg neki számot, vagy ha egy fájlból stringként kerül beolvasásra, de valamilyen matematikai műveletet akarunk végre hajtani rajta, szépen átkonvertálja a stringet float típussá<br>
                             -round(x,n=0) x lebegõpontos értékét a tizedes pont után n számjegyre kerekítve adja vissza.<br>
                             -type(objektum) Egy objektum típusát adja értékül. Például: if type(x) == type(''): print 'Ez egy sztring.'<br>
@@ -498,7 +506,42 @@ ar = festek_kalkulator(5, 2) * 700
                     <div>
                         <pre class="line-numbers"><code class="language-python">Kódforrást tekintsd meg!</code></pre>
                     </div>
-                </div>            
+                </div>
+                
+                
+
+                <div class="uk-card uk-card-default uk-card-body uk-margin-large">
+                    <h1 class="uk-text-center" id="grad">Python quiz</h1>
+                </div>
+                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h2>Quiz</h2>
+                            <p>Placeholder</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h2>Quiz</h2>
+                            <p>Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h2><a href="../"><span uk-icon="icon: chevron-left"></span> Vissza a főoldalra</a></h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-right">
+                            <h2><a href="">Tovább a haladó részhez <span uk-icon="icon: chevron-right"></span></a></h2>
+                        </div>
+                    </div>
+                </div>
+
+
         </div>
         <hr class="uk-divider-icon">
             <footer>
@@ -508,7 +551,7 @@ ar = festek_kalkulator(5, 2) * 700
                             <div>
                                 <div class="uk-card uk-card-default uk-card-small uk-card-body uk-grid-item-match">
                                     <h2 class="uk-card-title">Információ</h2>
-                                    <p id="info">Projektfeladat, készült 2022.0x.xx.</p><hr><p>Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból. A Weboldal elkészítése rengeteg időt <a href="https://wakatime.com/badge/github/gydoma/projekt"><img width=160 height="20" src="https://wakatime.com/badge/github/gydoma/projekt.svg" alt="wt"></a> vett igénybe nekünk. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p><div class="uk-child-width-1-2@s" uk-grid><p class="uk-text-center"><a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p><span class="uk-text-center">Vissza az oldal tetejére <a href="#" title="Go back" uk-totop uk-scroll></a></div><hr>
+                                    <p id="info">Projektfeladat, készült 2022.0x.xx.</p><hr><p>Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból. A Weboldal elkészítése rengeteg időt <a href="https://wakatime.com/badge/github/gydoma/projekt"><img src="https://wakatime.com/badge/github/gydoma/projekt.svg" alt="wakatime"></a> vett igénybe nekünk. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p><div class="uk-child-width-1-2@s" uk-grid><p class="uk-text-center"><a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p><span class="uk-text-center">Vissza az oldal tetejére <a href="#" title="Go back" uk-totop uk-scroll></a></div><hr>
                                     <div class="uk-child-width-1-2@s" uk-grid><img class="uk-visible@m" alt="Made With Python" src="res/made-with-python.svg"><img class="uk-visible@m"alt="Powered By Coffee" src="res/powered-by-coffee.svg"></div>
                                 </div>
                             </div>

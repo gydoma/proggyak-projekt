@@ -7,7 +7,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
 IKT Projektmunka 10. Évfolyam
-Az oldalunkat a weboldalunkon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
+A projektmunkánkat weboldalon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
 
 ## Python
 
@@ -18,9 +18,12 @@ Saját
 - [ ] Toolips
 - [ ] Labelling
 - [x] Jobb Title (Még mindig naon gáz)
-- [ ] Operátoroknál szöveges gridet valahogy nestelni vagy mittudomén mit csinálni vele de ne legyen ennyire túl csonk 
-- [ ] Esetleges quiz akármi 3 választós, 1 fejezetbe való, talán az oldal aljára de akkor témák végén egy link vagy button, elsőnél lehet hover item
-- [ ] Ha Kitty nem csinál semmit: miért jó ezt a nyelvet tanulni, mire jó, cmd-webapp..
+- [x] Operátoroknál szöveges gridet valahogy nestelni vagy mittudomén mit csinálni vele de ne legyen ennyire túl csonk 
+- [ ] Esetleges quiz akármi 3-5 választós radio/check gombokkal, 1-1 fejezetre, talán az oldal aljára -- de akkor témák végén egy link vagy button, elsőnél lehet hover item -- FASSÁG
+- [ ] Miért jó ezt a nyelvet tanulni, mire jó, cmd-webapp.. a legelejére a bevezető mellé.
+- [ ] Apple stílusú görgetés/parallax (főoldalon)
+- [ ] External linkeket új oldalra rakjuk
+- [ ] következő oldal a haladó pythonba, programozási tételek és egyebek amiket most veszünk
 
 Többiek
 - [ ] Elágazások: if/elif/else 
@@ -31,7 +34,11 @@ Többiek
 - [ ] megszámlálás
 - [ ] szélsőérték
 - [ ] keresés 
-- [ ] \_\_xyz\_\_
+- [ ] \_\_alsővonalas függvényakármik\_\_ (nem jut eszembe hirtelen a neve xd)
+- [ ] idővel kapcsolatos dolgok kiegészítése: aktuális dátum, dátum konvertálás...
+- [ ] Kezdjünk bele téma, ahol a print és alap számítások vannak pl 5+5 variable nélkül
+- [ ] logikai "in" operátor kód és jegyzet a kódba a többi alapján
+- [ ] kitty okosságának kigobózása, szóismétlés kiszedése, lebutítás és kód
 
 Készítette:
 
@@ -59,8 +66,11 @@ Készítette:
 - [ ] ugyszint a felepitese a doksinak hogy viewport body head html utf-8 ...
 #### CSS
 - [ ] rohadt csonk és minimum 40 szabályt kellene írni nem csak kettőt
+- [ ] szabályok használata
+- [ ] a tragikus "How to center a div" megfejtése (wid,rat,plac,ali)
 - [ ] classekre, pseuedo és id-kre is terjedjetek ki
 - [ ] nyelvtani hibák
+
 #### Bootstrap
 - [ ] ne legyen lorem ipsumos rész hanem magyarázzátok el hogy mi mit csinál vagy írjátok azt hogy placeholder/item 1-2...
 - [ ] több dolog is van itt nem csak ennyi, szóval ez is kurvára csonk
@@ -78,8 +88,11 @@ Készítette:
 
 - [ ] Ahogy a tanárúr is mondta a tech szingularitásról órákat lehetne beszélni remélem figyeltetek hogy miket lehetne belerakni
 - [ ] verziókezelőket kérlek kicsit nézzétek át és írjatok többet
-- [ ] it karbantartás: a tisztítással kicsit fogalkozz többet mert így a faszse fogja tudni mi az az LSD porszívó xd
+- [ ] it karbantartás: a tisztítással kicsit fogalkozz többet mert így a faszse fogja tudni mi az az "LSD" porszívó
 
 ## Hálózat ismeretek 
 
 őszintén mivel nem voltam ott amikor kiosztották a feladatot rohadtul nem tudom hogy ez majd kell e vagy nem szo pls help me
+
+- [ ] ihleteket szerezni, illetve a hálózatokat lehetőleg ne szutyok képekbe kellene megcsinálni
+
