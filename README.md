@@ -39,6 +39,7 @@ Többiek
 - [ ] Kezdjünk bele téma, ahol a print és alap számítások vannak pl 5+5 variable nélkül
 - [ ] logikai "in" operátor kód és jegyzet a kódba a többi alapján
 - [ ] kitty okosságának kigobózása, szóismétlés kiszedése, lebutítás és kód
+- [ ] Haladó rész elkezdése: progtételek! idő és egyéb
 
 Készítette:
 
