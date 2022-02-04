@@ -7,7 +7,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
 IKT Projektmunka 10. Évfolyam
-A projektmunkánkat weboldalon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
+A projektmunkánkat a weboldalamon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
 
 ## Python
 
@@ -76,7 +76,7 @@ Készítette:
 - [ ] ne legyen lorem ipsumos rész hanem magyarázzátok el hogy mi mit csinál vagy írjátok azt hogy placeholder/item 1-2...
 - [ ] több dolog is van itt nem csak ennyi, szóval ez is kurvára csonk
 - [ ] nyelvtani hibák (ne magázz, vagy fogalmazd újra az egészet vagy nemtudom)
-- [ ] terjedj ki arra hogy lehet csinálni sajátot is (bootstrapmade.com)
+- [ ] terjedj ki arra hogy lehet csinálni sajátot is, illetve vannak előre elkészített témák is: [bootsrapmade.com](https://bootstrapmade.com)
 
 ## IT
 
