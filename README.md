@@ -26,8 +26,8 @@ Saját
 - [ ] következő oldal a haladó pythonba, programozási tételek és egyebek amiket most veszünk
 
 Többiek
-- [ ] Elágazások: if/elif/else 
-- [ ] C: while
+- [x] Elágazások: if/elif/else 
+- [x] C: while
 - [ ] eljárások, függvények 
 - [ ] C: Listák (i, korbejaras, min-x) 
 - [ ] sorozatszámítás
