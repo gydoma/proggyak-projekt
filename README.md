@@ -11,6 +11,7 @@ A projektmunkánkat a weboldalamon is megtalálhatod [ITT](https://chromiumnetwo
 
 
 A TO-DO LISTA Átköltözött az "issues" részbe!!!!!
+- [x] #35
 ## Python
 
 Készítette:
