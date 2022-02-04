@@ -26,8 +26,8 @@ Saját
 - [ ] következő oldal a haladó pythonba, programozási tételek és egyebek amiket most veszünk
 
 Többiek
-- [ ] Elágazások: if/elif/else 
-- [ ] C: while
+- [x] Elágazások: if/elif/else 
+- [x] C: while
 - [ ] eljárások, függvények 
 - [ ] C: Listák (i, korbejaras, min-x) 
 - [ ] sorozatszámítás
@@ -39,6 +39,7 @@ Többiek
 - [ ] Kezdjünk bele téma, ahol a print és alap számítások vannak pl 5+5 variable nélkül
 - [ ] logikai "in" operátor kód és jegyzet a kódba a többi alapján
 - [ ] kitty okosságának kigobózása, szóismétlés kiszedése, lebutítás és kód
+- [ ] Haladó rész elkezdése: progtételek! idő és egyéb
 
 Készítette:
 
