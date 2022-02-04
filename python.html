@@ -75,7 +75,7 @@
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>Változók</h2>
-                            <p>Több féle változó létezik,<code>(int, str, bool, float)</code>. Egy változó létrehozásánál meg kell adnod neki egy nevet, és egy összeget. Ez esetben a nevük <code>x, y, lebegopontos, ivh, szoveg</code> illetve az értékük <code>5, 5, 5.55, True, Projektmunka</code><br><span class="uk-label uk-label-danger">Vigyázz!</span> A változók nevét nem írhatod ékezettel mert hibát dob ki<br>Az igaz és hamis változókat (<code>True</code> és <code>False</code>) kötelező nagybetűvel írni, különben nem értelmezhetőnek mutatja.<br><span class="uk-label uk-label-warning">Fontos</span> Ha szöveget szeretnénk írni aposztrófba <code>' '</code> vagy idézőjelbe <code>" "</code> kell írni<br> Ha egy szöveget és egy számot adunk össze akkor összeilleszti azokat a Python nyelv például <code>'alma' + 13 = 'alma13'</code> szorzatnál a szöveg változókat 'megszorozza' <code>'barack ' * 2 = 'barack barack '</code></p>
+                            <p>Több féle változó létezik,<code>(int, str, bool, float)</code>. Egy változó létrehozásánál meg kell adnod neki egy nevet, és egy összeget. Ez esetben a nevük <code>x, y, lebegopontos, ivh, szoveg</code> illetve az értékük <code>5, 5, 5.55, True, Projektmunka</code>.<br><span class="uk-label uk-label-danger">Vigyázz!</span> A változók nevét nem írhatod ékezettel mert hibát dob ki.<br>Az igaz és hamis változókat (<code>True</code> és <code>False</code>) kötelező nagybetűvel írni, különben nem értelmezhetőnek mutatja.<br><span class="uk-label uk-label-warning">Fontos</span> Ha szöveget szeretnénk írni aposztrófba <code>' '</code> vagy idézőjelbe <code>" "</code> kell írni.<br> Ha egy szöveget és egy számot adunk össze akkor összeilleszti azokat a Python nyelv például <code>'alma' + 13 = 'alma13'</code> szorzatnál a szöveg változókat 'megszorozza' <code>'barack ' * 2 = 'barack barack '</code>.</p>
                         </div>
                     </div>
                     <div>
@@ -240,32 +240,40 @@ else: print('ez meg már nem fog lefutni')</code></pre>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>3.1 Könyvtárak</h2>
                             <p>Mik azok a könyvtárak és miket tudsz velük csinálni?<br>
-                                A Python nyelv gyorsasága érdekében egyes függvényeket egy bizonyos <code>import</code> parancsal lehet csak aktiválni és majd azokat később felhasználni.<br>
-                                Rengeteg hasznos könyvtár van alapból a pythonnal telepítve,<br>
-                                Mindegyik könyvtárból importált függvényt úgy kell írni, hogy a könyvtár nevét egy pontot és a függvény nevét írjuk le például <code>random.randint()</code> <br><span class="uk-label">rövidítsünk!</span> A <code>from [Könyvtár] import [függvény, ...]</code> paranccsal már nem kell a könyvtár nevét is kiiírni úgy szint a pontot se ha elő akarjuk hívni a könyvtárakban lévő függvényeket. Ha esetleg több függvény kellene az adott könyvtárból alkalmazzunk könyvtár rövidítéseket: <code>import [Könyvtár Neve] as [Rövidítés]</code> a rövidítést kitalálhatjuk mi és a teljes könyvtár kiírása helyett csak azt kell leírnunk.</p>
+                                A Python nyelv gyorsasága érdekében egyes függvényeket egy bizonyos <code>import</code> paranccsal lehet csak aktiválni és majd azokat később felhasználni.<br>
+                                Rengeteg hasznos könyvtár van alapból a pythonnal telepítve.<br>
+                                Mindegyik könyvtárból importált függvényt úgy kell írni, hogy a könyvtár nevét egy pontot és a függvény nevét írjuk le például: <code>random.randint()</code> <br><span class="uk-label">rövidítsünk!</span> A <code>from [Könyvtár] import [függvény, ...]</code> paranccsal már nem kell a könyvtár nevét is kiírni úgy szint a pontot se ha elő akarjuk hívni a könyvtárakban lévő függvényeket. Ha esetleg több függvény kellene az adott könyvtárból alkalmazzunk könyvtár rövidítéseket: <code>import [Könyvtár Neve] as [Rövidítés]</code> a rövidítést kitalálhatjuk mi és a teljes könyvtár kiírása helyett csak azt kell leírnunk.</p>
                         
-                                <p>Most, hogy már tudjuk hogyan kell importáni ezeket nézzük meg a leggyakoribb könyvtárakat:</p>
+                                <p>Most, hogy már tudjuk hogyan kell importálni, nézzük meg a leggyakoribb könyvtárakat:</p>
                                 <dl class="uk-description-list">
                                     <dt>Import Math</dt>
-                                    <dd>Az egyik beépített modulja a Pythonnak a math, amely kiterjeszti a matematikai függvények listáját. Itt felsoroljuk a legfontosabbakat neked.</dd>
+                                    <dd>Az egyik beépített modulja a Pythonnak a math, amely kiterjeszti a matematikai függvények listáját. Itt felsoroljuk a legfontosabbakat neked:</dd>
                                 </dl>
-                                <p>A <code>math.pi</code> konstans a PI (3.14...) értékét adja vissza</p>
+                                <ul class="uk-list uk-list-disc">
+                                    <li>A <code>math.pi</code> konstans a PI (3.14...) értékét adja vissza</li>
+                                    <li>A <code>min()</code> és <code>max()</code> függvények segítségével megkereshetjük a legalacsonyabb vagy legmagasabb értéket akár egy listában</li>
+                                    <li>A <code>math.sqrt()</code> egy szám négyzetgyökét adja vissza</li>
+                                    <li>Hatványozás: <code>math.pow()</code> kettő állítást vár, s csak egész vagy valós értéket fogad el hatványalapnak és hatványkitevőnek egyaránt</li>
+                                </ul>
 
-                                <p>A <code>min()</code> és <code>max()</code> függvények segítségével megkereshetjük a legalacsonyabb vagy legmagasabb értéket akár egy listában.</p>                                                                                                                                 
-                                <p>A <code>math.sqrt()</code> egy szám négyzetgyökét adja vissza</p>              
-                                <p>Hatványozás: <code>math.pow()</code> kettő állítást vár, s csak egész vagy valós értéket fogad el hatványalapnak és hatványkitevőnek egyaránt.</p>
                                 <dl class="uk-description-list">
                                     <dt>Import Random</dt>
-                                    <dd>A random magáért beszél random. Most hát mit is jelent ez? Véletlenszerű számokat tudsz vele készíteni és így akár dinamikusan is tudod tesztelni a kódod.</dd>
+                                    <dd>A random magáért beszél. Mit is jelent ez? Véletlenszerű számokat tudsz vele készíteni és így akár dinamikusan is tudod tesztelni a kódod.</dd>
                                 </dl>
-                                <p>Ha véletlen, egész számot szeretnénk, használhatjuk a <code>randint()</code> függvényt. A <code>randint()</code> két paramétert fogad el: egy legkisebb és egy legnagyobb számot. Az első értéknek kisebbnek kell lennie, mint a másodiknak. Egész szám, zárt-ZÁRT intervallumból például a <code>randint(10,30)</code> = [10;30].</p>
-                                <p>A <code>random()</code> véletlen lebegőpontos számot generál két paraméter közt</p>
-                                <p><code>Randrange()</code> függvény: egy véletlenszerűen kiválasztott elem generálása. Egész szám zárt-NYÍLT intervallumból pl.: [10;30).</p>
+                                <ul class="uk-list uk-list-disc">
+                                    <li>Ha véletlen, egész számot szeretnénk, használhatjuk a <code>randint()</code> függvényt. A <code>randint()</code> két paramétert fogad el: egy legkisebb és egy legnagyobb számot. Az első értéknek kisebbnek kell lennie, mint a másodiknak. Egész szám, zárt-ZÁRT intervallumból például a <code>randint(10,30)</code> = [10;30].</li>
+                                    <li>A <code>random()</code> véletlen lebegőpontos számot generál két paraméter közt</li>
+                                    <li><code>Randrange()</code> függvény: egy véletlenszerűen kiválasztott elem generálása. Egész szám zárt-NYÍLT intervallumból pl.: [10;30)</li>
+                                </ul>
+
                                 <dl class="uk-description-list">
                                     <dt>Import Time</dt>
                                     <dd>Az idővel kapcsolatos dolgok, konvertálás, pontos idő kiírása, időzónák és egyebek.</dd>
-                                </dl>                                
-                                <p>Várjon a program valamennyi másodpercig, mielőtt folytatódna a program: <code>sleep()</code></p>
+                                </dl>
+                                <ul class="uk-list uk-list-disc">
+                                    <li>Várjon a program valamennyi másodpercig, mielőtt folytatódna a program: <code>sleep()</code></li>
+                                </ul>                              
+
                                 <dl class="uk-description-list">
                                     <dt>Import os</dt>
                                     <dd>Fájl írás, olvasás, törlés illetve bash parancsok készítésére való könyvtár</dd>
@@ -339,7 +347,7 @@ os.system('clear')
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>4.1 Ciklusok: for</h2>
-                            <p>Gyakran megesik, hogy egy vagy több utasítást többször végre akarunk hajtatni a programmal. Például ötször szeretnénk kiíratni ugyanazt a szöveget. Ilyenkor ciklusokat használunk.<br>Látható hogy a kódunkban a <code>for</code> mellett van egy <code>i</code> ez egy integer változó mely minden egyes kódsor lefutása után megnő eggyel. Ha ebben a kódban a <code>for</code> ciklusunkba kiprintelnénk folyton az <code>i</code> változót akkor 0-ról egyesével megnőne addig ameddig a ciklusunk tart.</p>
+                            <p>Gyakran megesik, hogy egy vagy több utasítást többször végre akarunk hajtani a programmal. Például ötször szeretnénk kiíratni ugyanazt a szöveget. Ilyenkor ciklusokat használunk.<br>Látható, hogy a kódunkban a <code>for</code> mellett van egy <code>i</code>, ez egy integer változó, mely minden egyes kódsor lefutása után megnő eggyel. Ha ebben a kódban a <code>for</code> ciklusunkba kiprintelnénk folyton az <code>i</code> változót, akkor 0-ról egyesével megnőne addig ameddig a ciklusunk tart.</p>
                         </div>
                     </div>
                     <div>
@@ -355,7 +363,7 @@ for i in range(szam):
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>4.2 Ciklusok: while</h2>
-                            <p>A while ciklus pedig addig csinál egy adott feladatot, ameddig a feltétel nem lesz igaz. ez azt is jelenti, hogy ezzel tudunk csinálni egy végtelen ciklust is, ha <code>While True:</code> kódot használjuk soha nem fog megállni a kódunk kivéve ha egy <code>break</code> kifejezést használunk.</p>
+                            <p>A while ciklus addig csinál egy adott feladatot, ameddig a feltétel nem lesz igaz. Ez azt is jelenti, hogy ezzel tudunk csinálni egy végtelen ciklust is, ha <code>While True:</code> kódot használjuk soha nem fog megállni a kódunk kivéve ha egy <code>break</code> kifejezést használunk.</p>
                         </div>
                     </div>
                     <div>
@@ -374,7 +382,7 @@ while szam &#60;= 10:
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>5.1 Listák</h2>
-                            <p>Logikailag összetartozó adatok tárolására összetett adattípusokat használunk. Például a hónapok neveit, egy csoportot alkotó diákokat, a kedvenc ételeinket sokkal praktikusabb listában tárolni, mint különálló változók sokaságában, a listákat mindig a 0-adik elemtől indexeljük, azaz a legelső elem az 0.</p>
+                            <p>Logikailag összetartozó adatok tárolására összetett adattípusokat használunk. Például a hónapok neveit, egy csoportot alkotó diákokat, a kedvenc ételeinket sokkal praktikusabb listában tárolni, mint különálló változók sokaságában, a listákat mindig a 0-dik elemtől indexeljük, azaz a legelső elem az 0.</p>
                             <p>A <code>len()</code> függvény visszatér a lista hosszával, amely egyenlő a lista elemeinek számával.</p>
                         </div>
                     </div>
@@ -414,9 +422,9 @@ for i in range(len(allatok)):
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>6.1 Eljárások <span class="uk-label uk-label-danger">Haladó</span></h2>
-                            <p>Láthatóbbá tudod tenni a kódodat illetve, könnyebben kezelhetővé az eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code> ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni.</p>
+                            <p>Láthatóbbá tudod tenni a kódodat illetve, könnyebben kezelhetővé az eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk, mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code>. Ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni.</p>
                             <p>Amikor egy eljárást szeretnénk csinálni el kell döntenünk hogy szeretnénk paramétereket kérni és ha igen, milyen paramétert kérjünk, be. Például ha csak egy integert szeretnénk a függvényünk neve után így tudjuk jelezni a gépnek, hogy csak integert fogad el: <code>def szam() -&gt; int:</code>
-                            <p>Amennyiben kódunkban nem printelni fogunk hanem például egy új változót csinálni akkor a függvény definiálása után <code>return változó_neve</code> kódsort alkalmazzuk</p>
+                            <p>Amennyiben kódunkban nem printelni fogunk hanem például egy új változót csinálni akkor a függvény definiálása után <code>return változó_neve</code> kódsort alkalmazzuk.</p>
                             </p>
                         </div>
                     </div>
