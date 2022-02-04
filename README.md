@@ -11,7 +11,7 @@ A projektmunkánkat a weboldalamon is megtalálhatod [ITT](https://chromiumnetwo
 
 
 A TO-DO LISTA Átköltözött az "issues" részbe!!!!!
-- [ ] \(#34) Open a followup issue
+
 ## Python
 
 Készítette:
