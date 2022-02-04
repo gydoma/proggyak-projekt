@@ -45,5 +45,6 @@ Készítette:
 
 őszintén mivel nem voltam ott amikor kiosztották a feladatot rohadtul nem tudom hogy ez majd kell e vagy nem szo pls help me
 
-- [ ] ihleteket szerezni, illetve a hálózatokat lehetőleg ne szutyok képekbe kellene megcsinálni
+Készítette:
 
+- Jelentkezőket kérek!
