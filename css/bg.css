@@ -1,6 +1,6 @@
-/* 
+
 body{ 
-    background-image: url(../res/tile.gif);
+    /* background-image: url(../res/tile.gif);
     background-size: 115%;
     background-position: 0px 0px;
     background-repeat: repeat;
@@ -8,5 +8,16 @@ body{
 }
 @keyframes animatedBackground {
 	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-} */
+	to { background-position: 100% 0; } */
+
+
+/* hide scrollbar but allow scrolling */
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+
+}
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
