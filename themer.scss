@@ -1,16 +1,22 @@
-// 1. Your custom variables and variable overwrites.
-//eg $global-link-color: #DA7D02;
+// Vars and var overrides
+//black background
+$navbar-background: #272822 !default;
+$list-striped-background: #333 !default;
+$global-background: #272822 !default;
+$base-code-background: #444 !default;
+$global-emphasis-color: #333 !default;
+
+//reversed text color
 $global-color: #ddd !default;
 $global-inverse-color: #fff !default;
 $base-code-color: #fff !default;
-$base-code-background: #444 !default;
-$list-striped-background: #333 !default;
-$global-background: #272822 !default;
 $global-muted-color: #ddd !default;
-$navbar-background: #272822 !default;
+
+//links to the new colors
 $base-link-color: #008088 !default;
 $base-link-hover-color: #006565 !default;
 
+//global color background (most of them are labels now)
 $global-primary-background: #006780 !default;
 $global-success-background: #12b276 !default;
 $global-warning-background: #ea904a !default;
