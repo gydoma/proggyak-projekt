@@ -134,7 +134,7 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            JAN28.ipynb fájl kb 1/1 lemásolása kb
+                            
                         </div>
                     </div>
                     <div>
@@ -147,26 +147,34 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Összegzés
+                            <h2>Összegzés</h2>
+                            <img src="res/sketch/ossz.png" alt="">
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-                                
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+
+sum = 0 
+for i in lista: 
+    sum = sum + i
+print(sum)</code></pre>
                     </div>
                 </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Megszámolás
+                            <h2>Megszámolás</h2>
+                            <img src="res/sketch/megsz.png" alt="">
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-                                
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+
+c = 0
+for i in lista:
+    if i &gt; 3: c += 1
+print(c)</code></pre>
                     </div>
                 </div>
 
@@ -177,9 +185,15 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-                                
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+
+keres = int(input('Keresett szám: '))
+while i &lt; len(lista) and lista[i] != keres:
+    i = i + 1
+if i &lt; len(lista):
+    print('Van')
+else:
+    print('Nincs')</code></pre>
                     </div>
                 </div>
 
@@ -190,9 +204,12 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-                            
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+
+keres = int(input('Keresett szám: '))
+while lista[i] != keres:
+    i = i + 1
+print(f'{i + 1}. helyen van a keresett szám')</code></pre>
                     </div>
                 </div>
 
@@ -203,9 +220,15 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+keres = int(input('Keresett elem: '))
 
-                        </code></pre>
+while i &lt; ln and lista[i] != keres:
+    i = i + 1
+if i &lt; ln: 
+    print(f'Van "{keres}" elem, indexe: {i}')
+else:
+    print('Nincs ilyen elem')</code></pre>
                     </div>
                 </div>
 
@@ -216,9 +239,20 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-                                
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+lista_copy = []
+lista_kettes_szorzas = []
+for i in lista:
+    lista_copy.append(i)
+print(lista_copy)
+
+def kettes_szorzas(szam) -> int:
+    '''Egy számot megszoroz kettővel.'''
+    return szam * 2
+
+for i in lista:
+    lista_kettes_szorzas.append(kettes_szorzas(i))
+print(lista_kettes_szorzas)</code></pre>
                     </div>
                 </div>
 
@@ -229,9 +263,10 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">for i in lista:
+    if i &lt; 5: 
+        lista2.append[i]
+p(lista2)</code></pre>
                     </div>
                 </div>
 
@@ -242,9 +277,11 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">for i in lista:
+    if i &lt; 5:
+        lista2.append[i]
+    else: 
+        lista3.append[i]</code></pre>
                     </div>
                 </div>
 
@@ -255,9 +292,11 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">for x in a:
+    i=0
+    while i&lt;len(b) and x!=b[i]:i+=1
+    if i&lt;len(b):c.append(i)
+print(c)</code></pre>
                     </div>
                 </div>
 
@@ -268,9 +307,12 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
-
-                        </code></pre>
+                        <pre class="line-numbers"><code class="language-python">c = a.copy()
+for j in range(0, len(b)):
+    i=0
+    while i&lt;len(a) and b[j] != a[i]:i+=1
+    if i&gt;=len(a):c.append(b[j])
+print(c)</code></pre>
                     </div>
                 </div>
 
@@ -281,8 +323,18 @@
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
+                        <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
+mini = 0
+maxi = 0
 
+for x in range(len(lista)):
+    if lista[x]&lt;mini:
+        mini=lista[x]
+for x in range(len(lista)):
+    if lista[x]&gt;maxi:
+        maxi=lista[x] 
+print(f'legnagyobb szám a listában: {maxi}')
+print(f'legkisebb szám a listában: {mini}')
                         </code></pre>
                     </div>
                 </div>
