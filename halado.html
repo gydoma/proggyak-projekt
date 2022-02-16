@@ -74,40 +74,99 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            előző részből haladó taggal jelölt
+                            <h2>6.1 Eljárások</h2>
+                            <p>Láthatóbbá tudod tenni a kódodat illetve, könnyebben kezelhetővé az eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk, mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code>. Ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni.</p>
+                            <p>Amikor egy eljárást szeretnénk csinálni el kell döntenünk hogy szeretnénk paramétereket kérni és ha igen, milyen paramétert kérjünk, be. Például ha csak egy integert szeretnénk a függvényünk neve után így tudjuk jelezni a gépnek, hogy csak integert fogad el: <code>def szam() -&gt; int:</code></p>
+                            <p>Amennyiben kódunkban nem printelni fogunk hanem például egy új változót csinálni akkor a függvény definiálása után <code>return változó_neve</code> kódsort alkalmazzuk.</p>
+                            <img src="res/sketch/def.png" alt="Definició megmagyarázása">
+                            
                         </div>
                     </div>
                     <div>
+                        <pre class="line-numbers"><code class="language-python">Paraméter nélküli eljárás:
 
-                            <pre class="line-numbers"><code class="language-python">
+#helloworld.py
+def helloworld():
+    print('Hello world!')
 
-                            </code></pre>
+#main.py
+helloworld() 
+#Eredmény: 'Hello world!'
 
+Paraméteres eljárás:
+
+#udvozol.py
+def udvozol(nev):
+    print('A nevem '+ nev +', és a tiéd?')
+
+#main.py
+udvozol('Ádám') 
+#Eredmény: 'Szia Ádám, légy üdvözölve!'
+</code></pre>
                     </div>
                 </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            előző részből haladó taggal jelölt
+                            <h2>6.2 Függvények</h2>
+                            <p>A függvény meghatározása nagyon egyszerű: ez egy kis kódrészlet, ami valami specifikus feladatot lát el.</p><p>A függvény az utasítások olyan blokkja, ami végrehajtja a benne meghatározott művelet(ek)et, és miután lefutott, 
+                                tetszőlegesen újra hívható, futtatható.</p><p> A függvények modulárisabbá, áttekinthetőbbé teszik a kódot, lehetővé téve ugyanazon kódrészlet (függvény) újra és újra használatát.</p>
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
+                        <pre class="line-numbers"><code class="language-python"># Függvény definíciója
+def festek_kalkulator(x, y):
+    t = x * y
+    l = t * 0.13
+    return l
+                            
+                            
 
-                        </code></pre>
+# Függvény hívása
+liter = festek_kalkulator(5, 2)
+                            
+# A függvény lehet egy kifejezés része is
+ar = festek_kalkulator(5, 2) * 700
+</code></pre>
                     </div>
                 </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            idő és dátum
+                            <h3>Idő és dátum</h3>
+                            <p>Ismerkedjünk meg a <code>datetime</code> könyvtárral!</p>
+                            <ul class="uk-list uk-list-striped">
+                                <li><code>datetime.now</code> - mostani időt dobja ki</li>
+                                <li><code>(datetime.now).year</code> - a mostani évet dobja ki</li>
+                                <li><code>strftime</code>Átkonvertál egy idő típusú változót szöveg változóvá <span class="uk-text-muted">(amit formázni is tudsz)</span></li>
+                            </ul>
+                            <p>Itt egy excel dokumentum a <code>strftime()</code> formázáshoz <span class="uk-text-muted">(ebbe mindent megtalálsz!)</span></p>
+                            <a href="res/docs/Ido_python.xlsx"><span class="uk-margin-small-right" uk-icon="file-text"></span>Ido_python.xlsx</a>
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">
+                        <pre class="line-numbers"><code class="language-python">import datetime
 
+x = datetime.datetime.now()
+
+print(x.year) # mostani évszám
+print(x.strftime("%A")) # aktuális nap neve
+#output: <script>new Date().getFullYear()</script>
+#output: <script>new Date().toLocaleDateString(locale,{weekday:'long'})</script>
+
+
+x = datetime.datetime(2022, 2, 15)
+
+print(x.year) # 2022
+print(x.strftime("%A")) # Thuesday
+
+
+idomost = datetime.datetime.now()
+vegeido = datetime.datetime(2025, 10, 4)
+
+print(f'A beadási határidő: {vegeido-idomost}')
                         </code></pre>
                     </div>
                 </div>
@@ -115,31 +174,76 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            pip install pygame<br>
-                            pip install turtle<br>
-                            játékok készítése, haladj tovább a programozási tételekre bla,bla,bla
+                            <h3>Vége</h3>
+                            <p><span class="uk-text-emphasis">Nagyszerű!</span> Ha mindent átnéztél, kipróbáltál magadnak, akkor már egész jól megy a python nyelv illetve tudod is alkalmazni egyes esetekben.<br>
+                            De maradt még egy pár dolog, a python nem csak arra való, hogy az unalmas fekete fehér parancssorban lássuk az eredményeket. Tudsz még rajzolni is és rendes játékokat csinálni!<br>
+                            Jobb oldalt beraktunk kettő fájlt amit kattintásra le tudsz tölteni. Mik is ezek? Leginkább példafájlok, hogy legyen egy kis ihleted, hogy mit tudsz még csinálni a python nyelv bugyraiban.<br>
+                            Használatukhoz bármilyen parancssorba írd be ezt a két szöveget (pygame - játékkal kapcsolatos könyvtár / turtle - rajzolós könyvtár - avagy - imagine logo copy)<br>
+                            <code>pip install pygame</code> / <code>pip install turtle</code><br>
+                            amennyiben kijátszodtad magad visszatérhetsz a programozási tételekre, amik nagyon hasznosak ha tényleg szeretnéd folytatni a python-os karrieredet.</p>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            példafájlok letöltése fájl ikon elöttük és szöveget is felé
+                            <h3><span class="uk-margin-small-right" uk-icon="folder"></span> Példafájlok</h3>
+                            <ul class="uk-list uk-margin-medium-left">
+                                <li><a class="uk-link-muted" href="res/examples/turtle.py"><span class="uk-margin-small-right" uk-icon="file-text"></span>Turtle.py</a></li>
+                                <li><a class="uk-link-muted" href="res/examples/game.py"><span class="uk-margin-small-right" uk-icon="file-text"></span>Snakegame.py</a></li>
+                            </ul>
+                            <h3><span class="uk-margin-small-right" uk-icon="search"></span> Hasznos linkek</h3>
+                            <ul class="uk-list uk-margin-medium-left">
+                                <li><a class="uk-link-muted" href="https://www.pygame.org/" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="link"></span>Pygame.org</a></li>
+                                <li><a class="uk-link-muted" href="https://docs.python.org/3/library/turtle.html" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="link"></span>Python Turtle</a></li>
+                                <li><a class="uk-link-muted" href="https://matplotlib.org" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="link"></span>matplotlib.org (adat vizualizáció)</a></li>
+                                <li><a class="uk-link-muted" href="https://www.youtube.com/watch?v=FfWpgLFMI7w" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="youtube"></span>pygame tutorial</a></li>
+                                <li><a class="uk-link-muted" href="https://www.youtube.com/watch?v=Nt84_TzRkbo" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="youtube"></span>Adat vizualizáció</a></li>
+                                <li><a class="uk-link-muted" href="https://www.pygame.org/tags/pygame" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="link"></span>Pygame példák másoktól</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="uk-margin-large uk-card uk-card-default uk-card-body">
-                    <h1 class="uk-text-center" id="grad">Prog Tételek</h1>
+                    <h2 class="uk-text-center" id="grad">Prog Tételek</h2>
                 </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
+                            <h3>Programozási tételek</h3>
+                            <p>Ebben a részben a programozási tételekkel fogunk foglalkozni.<br>
+                            Igyekeztünk a legérthetőbben leírni és vizualizálni a tételeket, ahogy láthatod bal oldalt részletesen a kód minden porcikáját megfigyeljük és azonos színnel jelöltük az azonos változókat, funkciókat és egyebeket. A nyilak segítenek, hogy meg tudd figyelni melyik kódrész melyikhez vezet. Vonallal választottuk el az Inputot, a Kódot ami megcsinálja az adott műveletet és az Outputot. Dupla vonallal a külön szálon futó kódokat szeparáltuk szét, hogy ne gabalyodj bele a két kódba.<br>
+                            És természetesen nyers kódot is adtunk hozzá (jobb oldalt látható), hogy tudd tesztelni a gépeden.</p>
                             
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            
+                            <h3>A lecke tartalma:</h3>
+                            <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
+                                <div>
+                                    <ul class="uk-list uk-list-divider">
+                                        <li>Összegzés</li>
+                                        <li>Megszámolás</li>
+                                        <li>Eldöntés</li>
+                                        <li>Kiválasztás</li>
+                                        <li>Keresés</li>
+                                        <li>Másolás</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-list uk-list-divider">
+                                        <li>Kiválogatás</li>
+                                        <li>Szétválogatás</li>
+                                        <li>Metszet</li>
+                                        <li>Unió</li>
+                                        <li>Szélsőérték</li>
+                                        <li></li>
+                                    </ul>                                    
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -147,7 +251,7 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>Összegzés</h2>
+                            <h3>Összegzés</h3>
                             <img src="res/sketch/ossz.png" alt="">
                         </div>
                     </div>
@@ -164,7 +268,7 @@ print(sum)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>Megszámolás</h2>
+                            <h3>Megszámolás</h3>
                             <img src="res/sketch/megsz.png" alt="">
                         </div>
                     </div>
@@ -181,7 +285,8 @@ print(c)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Eldöntés
+                            <h3>Eldöntés</h3>
+                            <img src="res/sketch/eldont.png" alt="">
                         </div>
                     </div>
                     <div>
@@ -200,7 +305,8 @@ else:
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Kiválasztás
+                            <h3>Kiválasztás</h3>
+                            
                         </div>
                     </div>
                     <div>
@@ -216,7 +322,7 @@ print(f'{i + 1}. helyen van a keresett szám')</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Keresés
+                            <h3>Keresés</h3>
                         </div>
                     </div>
                     <div>
@@ -235,7 +341,8 @@ else:
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Másolás
+                            <h3>Másolás</h3>
+                            <img src="res/sketch/masol.png" alt="">
                         </div>
                     </div>
                     <div>
@@ -246,7 +353,7 @@ for i in lista:
     lista_copy.append(i)
 print(lista_copy)
 
-def kettes_szorzas(szam) -> int:
+def kettes_szorzas(szam:int) -> int:
     '''Egy számot megszoroz kettővel.'''
     return szam * 2
 
@@ -259,7 +366,7 @@ print(lista_kettes_szorzas)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Kiválogatás
+                            <h3>Kiválogatás</h3>
                         </div>
                     </div>
                     <div>
@@ -273,7 +380,7 @@ p(lista2)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Szétválogatás
+                            <h3>Szétválogatás</h3>
                         </div>
                     </div>
                     <div>
@@ -288,7 +395,7 @@ p(lista2)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Metszet
+                            <h3>Metszet</h3>
                         </div>
                     </div>
                     <div>
@@ -303,7 +410,7 @@ print(c)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Unió
+                            <h3>Unió</h3>
                         </div>
                     </div>
                     <div>
@@ -319,7 +426,7 @@ print(c)</code></pre>
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            Szélsőérték
+                            <h3>Szélsőérték</h3>
                         </div>
                     </div>
                     <div>
@@ -339,23 +446,6 @@ print(f'legkisebb szám a listában: {mini}')
                     </div>
                 </div>
                 
-                
-
-                <div class="uk-card uk-card-default uk-card-body uk-margin-large">
-                    <h1 class="uk-text-center" id="grad">Haladó quiz</h1>
-                </div>
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-
-                        </div>
-                    </div>
-                </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>

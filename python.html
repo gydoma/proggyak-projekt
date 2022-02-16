@@ -418,66 +418,7 @@ for i in range(len(allatok)):
                     </div>
                 </div>
 
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.1 Eljárások <span class="uk-label uk-label-danger">Haladó</span></h2>
-                            <p>Láthatóbbá tudod tenni a kódodat illetve, könnyebben kezelhetővé az eljárások használatával. Az eljárásokat és a függvényeket általában külön fájlban tároljuk, mint a példában is mutatott <code>helloworld.py</code> és <code>udvozol.py</code>. Ezeket természetesen egy fájlba is tárolhatjuk viszont ameddig nem írunk óriási kódokat, addig nem feltétlenül kell ezeket használni.</p>
-                            <p>Amikor egy eljárást szeretnénk csinálni el kell döntenünk hogy szeretnénk paramétereket kérni és ha igen, milyen paramétert kérjünk, be. Például ha csak egy integert szeretnénk a függvényünk neve után így tudjuk jelezni a gépnek, hogy csak integert fogad el: <code>def szam() -&gt; int:</code></p>
-                            <p>Amennyiben kódunkban nem printelni fogunk hanem például egy új változót csinálni akkor a függvény definiálása után <code>return változó_neve</code> kódsort alkalmazzuk.</p>
-                            <img src="res/sketch/def.png" alt="Definició megmagyarázása">
-                            
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">Paraméter nélküli eljárás:
 
-#helloworld.py
-def helloworld():
-    print('Hello world!')
-
-#main.py
-helloworld() 
-#Eredmény: 'Hello world!'
-
-Paraméteres eljárás:
-
-#udvozol.py
-def udvozol(nev):
-    print('A nevem '+ nev +', és a tiéd?')
-
-#main.py
-udvozol('Ádám') 
-#Eredmény: 'Szia Ádám, légy üdvözölve!'
-</code></pre>
-                    </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.2 Függvények <span class="uk-label uk-label-danger">Haladó</span></h2>
-                            <p>A függvény meghatározása nagyon egyszerű: ez egy kis kódrészlet, ami valami specifikus feladatot lát el.</p><p>A függvény az utasítások olyan blokkja, ami végrehajtja a benne meghatározott művelet(ek)et, és miután lefutott, 
-                                tetszőlegesen újra hívható, futtatható.</p><p> A függvények modulárisabbá, áttekinthetőbbé teszik a kódot, lehetővé téve ugyanazon kódrészlet (függvény) újra és újra használatát.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python"># Függvény definíciója
-def festek_kalkulator(x, y):
-    t = x * y
-    l = t * 0.13
-    return l
-                            
-                            
-
-# Függvény hívása
-liter = festek_kalkulator(5, 2)
-                            
-# A függvény lehet egy kifejezés része is
-ar = festek_kalkulator(5, 2) * 700
-</code></pre>
-                    </div>
-                </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
@@ -513,26 +454,6 @@ ar = festek_kalkulator(5, 2) * 700
                     </div>
                 </div>
                 
-                
-
-                <div class="uk-card uk-card-default uk-card-body uk-margin-large">
-                    <h1 class="uk-text-center" id="grad">Python quiz</h1>
-                </div>
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>Quiz</h2>
-                            <p>Placeholder</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>Quiz</h2>
-                            <p>Placeholder</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
