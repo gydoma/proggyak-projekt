@@ -21,7 +21,7 @@ Készítette:
 - Digruber Emese
 - Gyurkovics Dominik: Projektvezető
 - Kerti János
-- Kormon Kitty
+- ~Kormon Kitty~
 - Kósa Márk
 - Varga Jázmin
 
@@ -44,9 +44,7 @@ Készítette:
 
 ## Hálózat ismeretek 
 
-őszintén mivel nem voltam ott amikor kiosztották a feladatot rohadtul nem tudom hogy ez majd kell e vagy nem szo pls help me
-
 Készítette:
 
-- Jelentkezőket kérek!
+- x
 
