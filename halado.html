@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/bg.css">
     <title>Projektmunka / Python</title>
     <meta name="description" content="Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból.">
+    <meta name="keywords" content="chromium, chromiumnetwork, gydoma, python programozás, verebelyszki, projektmunka, verebély, programozási tételek, összegzés, kiválogatás, szétválogatás, megszámolás, eldöntés, metszet, kiválasztás, unió, keresés, szélsőérték, másolás">
 </head>
 <body class="match-braces uk-background-secondary uk-animation-scale-down" style="background-color:#008088">
     <div>
@@ -99,6 +100,9 @@ Paraméteres eljárás:
 #udvozol.py
 def udvozol(nev):
     print('A nevem '+ nev +', és a tiéd?')
+# VAGY
+def udvozol(nev):
+    print(f'A nevem {nev} és a tiéd?')
 
 #main.py
 udvozol('Ádám') 
@@ -154,8 +158,8 @@ x = datetime.datetime.now()
 
 print(x.year) # mostani évszám
 print(x.strftime("%A")) # aktuális nap neve
-#output: <script>new Date().getFullYear()</script>
-#output: <script>new Date().toLocaleDateString(locale,{weekday:'long'})</script>
+#output: <script>document.write(new Date().getFullYear())</script>
+#output: <script>document.write(Date())</script>
 
 
 x = datetime.datetime(2022, 2, 15)
@@ -171,7 +175,28 @@ print(f'A beadási határidő: {vegeido-idomost}')
                         </code></pre>
                     </div>
                 </div>
-                
+                            <!--<p>A Python számos beépített függvénnyel rendelkezik, amikkel most megmutatjuk mikkel ismerkedtünk már meg ededig:<br>
+                            -sum(iterable, start=0) Visszaadja a két elem összegét. Csak szám típusú paramétert lehet neki megadni, tehát nem lehet például stringek konkatenálására használni.<br>
+                            -range(start [,end [, lépés]])A !LT= start és !GT end értékek közötti egész számokból képzett listát ad vissza értékül.Egy argumentummal, lista 0-tól ..<argumentum>-1 értékig.Két argumentummal, lista <start> értéktõl..<end>-1 értékig.Három argumentummal, lista <start> értéktõl <end> értékig <lépés>- sel.<br>
+                            -list([iterable]) Létrehoz egy új lista objektumot, amelynek az elemei ugyanazok, mint az iterable elemei.<br>
+                            -input([prompt]) Kiírja a prompt jelet, ha megadtuk. Beolvassa az input jelet és kiértékeli.<br>
+                            -int(x) Egy számot sima egész számmá (<code>int</code>) konvertál. (amennyiben nem szám, hanem pl szöveg akkor hibát ír)<br>
+                            -float(x) Az x számot lebegõpontos számmá konvertálja. Ez a függvény még akkor is hasznos, ha stringként adunk meg neki számot, vagy ha egy fájlból stringként kerül beolvasásra, de valamilyen matematikai műveletet akarunk végre hajtani rajta, szépen átkonvertálja a stringet float típussá<br>
+                            -round(x,n=0) x lebegõpontos értékét a tizedes pont után n számjegyre kerekítve adja vissza.<br>
+                            -type(objektum) Egy objektum típusát adja értékül. Például: if type(x) == type(''): print 'Ez egy sztring.'<br>
+                            -str(objektum) Egy sztring értéket ad vissza, mely egy objektum jól nyomtatható reprezentációját adja vissza.<br>
+                            -return(num, -num) A „return” kulcsszót arra használhatjuk, hogy segítségével kilépjünk a függvényből, és a főprogram azon pontjára kerüljünk vissza, ahol a hívás történt. A „return” tartalmazhat visszatérési értéket is, ami például egy számítás eredménye lehet.<br>
+                            -len(s) Len azaz lenght kiírja hány db érték van a listán, de ha stringet adunk meg annak is kiírja, hány karakterből áll, bele számolja a szóközöket is, tehát használhatjuk stringeken is és listákon is.<br>
+                            -append() - a lista adattípus tagfüggvénye.  Listához tudunk vele új elemet hozzáfűzni.<br>
+                            -count() - a lista adattípus tagfüggvénye. Megmondja, hogy a zárójelben szereplő elem hányszor fordul elő a listában.<br>
+                            -break - arra való, hogy kilépjünk egy ciklusból, még mielőtt az végigfutna.<br>
+                            -index() - lista adattípus tagfüggvénye. Visszaadja a zárójelben megadott elem első előfordulásának indexét a listában.<br>
+                            -lower() - string adattípus tagfüggvénye. A stringet kisbetűssé alakítja. Ha eddig is kisbetűs volt, nos, annyi baj legyen!<br>
+                            -upper() - string adattípus tagfüggvénye. A karakterlánc NAGYBETŰS változatát adja vissza. <br>
+                            -sorted() - a zárójelben megadott listát rendezi, és új listát ad vissza, az eredetit nem bántja. A reverse=True megadásával lehetőséged van csökkenő sorrendet kérni, és kulcsfüggvényt is adhatsz meg, amivel úgy rendezel, ahogy jól esik.<br>
+                            -reversed() - a zárójelben megadott listát vagy karakterláncot megfordítva adja vissza.<br>
+                            -remove() - nem önálló parancs, hanem a lista adattípus tagfüggvénye. A zárójelben megadott elem első előfordulását kiveszi a listából.</p>
+                            -->
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
@@ -471,8 +496,18 @@ print(f'legkisebb szám a listában: {mini}')
                             <div>
                                 <div class="uk-card uk-card-default uk-card-small uk-card-body uk-grid-item-match">
                                     <h2 class="uk-card-title">Információ</h2>
-                                    <p id="info">Projektfeladat, készült 2022.0x.xx.</p><hr><p>Ez az oldal főképp a 10. évfolyam második féléves tananyagunkat tartalmazza, programozási tételek, időkezelés és egyéb extra dolgok is belekerültek, akik már foglalkoztak pythonnal, azoknak inkább ezt az oldalt ajánljuk és csak ismétlésnek a kezdőknek való oldalt. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p><div class="uk-child-width-1-2@s" uk-grid><p class="uk-text-center"><a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p><span class="uk-text-center">Vissza az oldal tetejére <a href="#" title="Go back" uk-totop uk-scroll></a></div><hr>
-                                    <div class="uk-child-width-1-2@s" uk-grid><img class="uk-visible@m" alt="Made With Python" src="res/made-with-python.svg"><img class="uk-visible@m"alt="Powered By Coffee" src="res/powered-by-coffee.svg"></div>
+                                    <blockquote cite="#">
+                                        <p class="uk-margin-small-bottom">Projektfeladat</p>
+                                        <footer id="info">Készült <cite>2022.04.04.</cite></footer>
+                                    </blockquote>
+                                    <p>Ez az oldal főképp a 10. évfolyam második féléves tananyagunkat tartalmazza, programozási tételek, időkezelés és egyéb extra dolgok is belekerültek. Akik már foglalkoztak pythonnal, azoknak inkább ezt az oldalt ajánljuk és csak ismétlésnek a kezdőknek való oldalt. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/proggyak-projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p>
+                                    <div class="uk-child-width-1-2@s" uk-grid>
+                                        <p class="uk-text-center">
+                                            <a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p>
+                                        <span class="uk-text-center">Vissza az oldal tetejére <span href="#" title="Go back" uk-totop uk-scroll></span>
+                                    </div>
+                                    <hr>
+                                    <div class="uk-child-width-1-2@s" uk-grid> <img class="uk-visible@m" alt="Made With Python" src="res/made-with-python.svg"> <img class="uk-visible@m"alt="Powered By Coffee" src="res/powered-by-coffee.svg"> </div>
                                 </div>
                             </div>
                         </div>
@@ -483,20 +518,18 @@ print(f'legkisebb szám a listában: {mini}')
                                     <li>Balogh Tamás <span class="uk-label">-</span></li>
                                     <li>Digruber Eszter <span class="uk-label">-</span></li>
                                     <li>Digruber Emese <span class="uk-label">-</span></li>
-                                    <li>Gyurkovics Dominik <span class="uk-text-muted">Projektvezető</span> <span class="uk-label">-</span></li>
+                                    <li>Gyurkovics Dominik <span class="uk-text-muted"><u></u>Projektvezető</span> <span class="uk-label">-</span></li>
                                     <li>Kerti János <span class="uk-label">-</span></li>
-                                    <li>Kormon Kitty <span class="uk-label">-</span></li>
                                     <li>Kósa Márk <span class="uk-label">-</span></li>
                                     <li>Varga Jázmin <span class="uk-label">-</span></li>
+                                    <li class="uk-text-muted"><del>Kormon Kitty</del></li>
                                 </ul>
                             </div>
                         </div>
                         </div>
                     </div>
-                </div>
             </footer>
         </div>
-    </div>
     </div>
 </body>
 </html>

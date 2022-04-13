@@ -423,34 +423,51 @@ for i in range(len(allatok)):
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>6.2 Beépített függvények <span class="uk-label uk-label">WIP</span></h2>
-                            <p class='uk-text-italic uk-text-lighter'>Kódforrást tekintsd meg!</p>
-                            <!--<p>A Python számos beépített függvénnyel rendelkezik, amikkel most megmutatjuk mikkel ismerkedtünk már meg ededig:<br>
-                            -sum(iterable, start=0) Visszaadja a két elem összegét. Csak szám típusú paramétert lehet neki megadni, tehát nem lehet például stringek konkatenálására használni.<br>
-                            -range(start [,end [, lépés]])A !LT= start és !GT end értékek közötti egész számokból képzett listát ad vissza értékül.Egy argumentummal, lista 0-tól ..<argumentum>-1 értékig.Két argumentummal, lista <start> értéktõl..<end>-1 értékig.Három argumentummal, lista <start> értéktõl <end> értékig <lépés>- sel.<br>
-                            -list([iterable]) Létrehoz egy új lista objektumot, amelynek az elemei ugyanazok, mint az iterable elemei.<br>
-                            -input([prompt]) Kiírja a prompt jelet, ha megadtuk. Beolvassa az input jelet és kiértékeli.<br>
-                            -int(x) Egy számot sima egész számmá (<code>int</code>) konvertál. (amennyiben nem szám, hanem pl szöveg akkor hibát ír)<br>
-                            -float(x) Az x számot lebegõpontos számmá konvertálja. Ez a függvény még akkor is hasznos, ha stringként adunk meg neki számot, vagy ha egy fájlból stringként kerül beolvasásra, de valamilyen matematikai műveletet akarunk végre hajtani rajta, szépen átkonvertálja a stringet float típussá<br>
-                            -round(x,n=0) x lebegõpontos értékét a tizedes pont után n számjegyre kerekítve adja vissza.<br>
-                            -type(objektum) Egy objektum típusát adja értékül. Például: if type(x) == type(''): print 'Ez egy sztring.'<br>
-                            -str(objektum) Egy sztring értéket ad vissza, mely egy objektum jól nyomtatható reprezentációját adja vissza.<br>
-                            -return(num, -num) A „return” kulcsszót arra használhatjuk, hogy segítségével kilépjünk a függvényből, és a főprogram azon pontjára kerüljünk vissza, ahol a hívás történt. A „return” tartalmazhat visszatérési értéket is, ami például egy számítás eredménye lehet.<br>
-                            -len(s) Len azaz lenght kiírja hány db érték van a listán, de ha stringet adunk meg annak is kiírja, hány karakterből áll, bele számolja a szóközöket is, tehát használhatjuk stringeken is és listákon is.<br>
-                            -append() - a lista adattípus tagfüggvénye.  Listához tudunk vele új elemet hozzáfűzni.<br>
-                            -count() - a lista adattípus tagfüggvénye. Megmondja, hogy a zárójelben szereplő elem hányszor fordul elő a listában.<br>
-                            -break - arra való, hogy kilépjünk egy ciklusból, még mielőtt az végigfutna.<br>
-                            -index() - lista adattípus tagfüggvénye. Visszaadja a zárójelben megadott elem első előfordulásának indexét a listában.<br>
-                            -lower() - string adattípus tagfüggvénye. A stringet kisbetűssé alakítja. Ha eddig is kisbetűs volt, nos, annyi baj legyen!<br>
-                            -upper() - string adattípus tagfüggvénye. A karakterlánc NAGYBETŰS változatát adja vissza. <br>
-                            -sorted() - a zárójelben megadott listát rendezi, és új listát ad vissza, az eredetit nem bántja. A reverse=True megadásával lehetőséged van csökkenő sorrendet kérni, és kulcsfüggvényt is adhatsz meg, amivel úgy rendezel, ahogy jól esik.<br>
-                            -reversed() - a zárójelben megadott listát vagy karakterláncot megfordítva adja vissza.<br>
-                            -remove() - nem önálló parancs, hanem a lista adattípus tagfüggvénye. A zárójelben megadott elem első előfordulását kiveszi a listából.</p>
-                            -->
+                            <h2>6.2 Minimum és maximum <span class="uk-label uk-label-danger">Új!</span></h2>
+                            <h3>Min()</h3>
+                            <p>A <code>min()</code> a python programozási nyelvben a <b>legkisebb</b> egységet jelenti egy listában</p>
+                            <p>Ezt használható számokkal <cite>[1. példa]</cite></p>
+                            <p>Számok esetében a min() a legkisebb számra vonatkozik. A mínusz számok esetében is működőképes. A nem egész számokat "tizedespont" működőképes, a "tizedesvessző" nem, mivel új listaelemként érzékeli.</p>
+                            És használható betűkkel is <cite>[2. példa]</cite>
+                            <p>Betűk esetében a <code>min()</code> az angol abc alapján történik és nem a szöveg hosszúsága alapján. A Python nem tesz különbséget a kisbetű és a nagybetű között ezen a téren (a függvények nevénél viszont figyelni kell, mivel ott más jelentése van a nagybetűk alapján)</p>
+                            <hr>
+                            <h3>Max()</h3>
+                            <p>A "max()" pont a "min()" ellentéte. A "max()" a listák <b>legnagyobb</b> elemét szedi ki. Számokkal működik <cite>[3. példa]</cite></p>
+                            <p>És egyaránt betűkkel is hasonlóan működik <cite>[4. példa]</cite></p>
+                            <p>A max() és a min() ugyanúgy működnek, csak ellentétes hatást váltanak ki (mint ahogy a nevük is sugallja). Mindkettő operátor a legszélső értékű listaelemet emeli ki.</p>
                         </div>
                     </div>
                     <div>
-                        <pre class="line-numbers"><code class="language-python">Kódforrást tekintsd meg!</code></pre>
+                        <pre class="line-numbers"><code class="language-python"># [1. Példa]
+
+lista = [2, 4, 8, 3, 1]
+a = min(lista)
+print(a)
+# Output ► 1
+
+
+# [2. Példa]
+
+diakok = ["Dalma", "Ivett", "Benedek", "Letti"]
+b = min[diakok]
+print(b)
+# Output ► Benedek
+
+
+# [3. Példa]
+
+lista = [2, 4, 8, 3, 1]
+c = max(lista)
+print(c)
+# Output ► 8
+
+
+# [4. Példa]
+
+diakok = ["Dalma", "Ivett", "Benedek", "Letti"]
+d = max(diakok)
+print(d)
+# Output ► Letti</code></pre>
                     </div>
                 </div>
                 
@@ -477,7 +494,16 @@ for i in range(len(allatok)):
                             <div>
                                 <div class="uk-card uk-card-default uk-card-small uk-card-body uk-grid-item-match">
                                     <h2 class="uk-card-title">Információ</h2>
-                                    <p id="info">Projektfeladat, készült 2022.0x.xx.</p><hr><p>Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból. A Weboldal elkészítése rengeteg időt <a href="https://wakatime.com/badge/user/6221663b-ad17-4a7f-8771-5192da1236af/project/bf32e746-fb3c-4082-8f36-c6aed2e17b9b" target="_blank"><img src="https://wakatime.com/badge/user/6221663b-ad17-4a7f-8771-5192da1236af/project/bf32e746-fb3c-4082-8f36-c6aed2e17b9b.svg"></a> vett igénybe nekünk. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/projekt" target="_blank">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p><div class="uk-child-width-1-2@s" uk-grid><p class="uk-text-center"><a href="https://chromiumnetwork.com" target="_blank">Chromium</a> © Copyright 2021 </p><a href="#" title="Go back" uk-totop uk-scroll class="uk-text-baseline"><span class="uk-text-center uk-text-normal">Vissza az oldal tetejére </a></div><hr>
+                                    <blockquote cite="#">
+                                        <p class="uk-margin-small-bottom">Projektfeladat</p>
+                                        <footer id="info">Készült <cite>2021. 12. 13.</cite></footer>
+                                    </blockquote>
+                                    <p>Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból. A Weboldal elkészítése rengeteg időt <a href="https://wakatime.com/badge/user/6221663b-ad17-4a7f-8771-5192da1236af/project/bf32e746-fb3c-4082-8f36-c6aed2e17b9b" target="_blank"><img src="https://wakatime.com/badge/user/6221663b-ad17-4a7f-8771-5192da1236af/project/bf32e746-fb3c-4082-8f36-c6aed2e17b9b.svg"></a> vett igénybe nekünk. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/proggyak-projekt" target="_blank">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p>
+                                    <div class="uk-child-width-1-2@s" uk-grid>
+                                        <p class="uk-text-center"><a href="https://chromiumnetwork.com" target="_blank">Chromium</a> © Copyright 2021 </p>
+                                        <a href="#" title="Go back" uk-totop uk-scroll class="uk-text-baseline"><span class="uk-text-center uk-text-normal">Vissza az oldal tetejére</span></a>
+                                    </div>
+                                    <hr>
                                     <div class="uk-child-width-1-2@s" uk-grid><img class="uk-visible@m" alt="Made With Python" src="res/made-with-python.svg"><img class="uk-visible@m"alt="Powered By Coffee" src="res/powered-by-coffee.svg"></div>
                                 </div>
                             </div>
@@ -499,10 +525,9 @@ for i in range(len(allatok)):
                         </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
-    </div>
     </div>
     <script src="js/uikit.min.js"></script>
     <script src="js/prism.js"></script>
