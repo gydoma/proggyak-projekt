@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link href="css/prism.css" rel="stylesheet">
-    <link href="css/fontgrad.css" rel="stylesheet">
+    
     <script src="js/prism.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/morpher.css">
     <script src="js/bg-color-morph.min.js"></script>
     <link rel="stylesheet" href="css/bg.css">
+    <link href="css/fontgrad.css" rel="stylesheet">
     <title>Projektmunka / Python</title>
     <meta name="description" content="Ezen az oldalon megtalálhatod, a 10. évfolyam első féléves anyagunkat programozás gyakorlatból. Próbálkoztunk a legigényesebben megoldani a kiadott feladatunkat és reméljük te is tudtál tanulni az anyagunkból.">
     <meta name="keywords" content="chromium, chromiumnetwork, gydoma, python programozás, verebelyszki, projektmunka, verebély, programozási tételek, összegzés, kiválogatás, szétválogatás, megszámolás, eldöntés, metszet, kiválasztás, unió, keresés, szélsőérték, másolás">
@@ -62,12 +63,13 @@
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h2>Üdv újra!</h2>
-                            <p>Ez itt a haladó python rész ahol összegfoglaltuk, hogy mit vettünk a második félévünkben programozás tantárgyból. Ezen az oldalon megtalálhatod és megtanulhatod a programozási tételeket, függvényeket, a paraméteres és nem paraméteres eljárásokat, illetve a dátum és idő használatát/kezelését pythonban. Reméljük, hogy tudtunk segíteni neked. </p>
+                            <p>Ez itt a haladó python rész ahol összegfoglaltuk, hogy mit vettünk a második félévünkben programozás tantárgyból. Ezen az oldalon megtalálhatod és megtanulhatod a programozási tételeket, függvényeket, a paraméteres és nem paraméteres eljárásokat, illetve a dátum és idő használatát/kezelését pythonban. Reméljük, hogy tudtunk segíteni neked. <span class="uk-visible@m">A szöveg mellett lévő blokkban könnyen ki is tudod próbálni ezeket a példákat! Használatához javascript engedélyezése szükséges!</span><span class="uk-hidden@m"><br><span class="uk-label uk-label-success">Jó tudni!</span> Ha ezt az oldalt gépen nyitod meg, ki is tudod próbálni a kódjaid az oldalba épített terminálban.</span></p>
                         </div>
                     </div>
-                    <div>
+                    <div class="uk-visible@m">
                         <div class="uk-card uk-card-default uk-card-body">
-                            <img src="res/sketch/pychlogo.png" alt="">
+                            <!--<img src="res/sketch/pychlogo.png" alt="">-->
+                            <iframe src="https://brython.info/console.html" height="100%" width="100%" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>
@@ -140,6 +142,98 @@ ar = festek_kalkulator(5, 2) * 700
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
+                            <h2>6.3 Beépített függvények</h2>
+                            <p>A Python számos beépített függvénnyel rendelkezik, ezeket a Python telepítésével azonnal tudjuk használni.</p><p>Az alábbi listában található az összes általunk ismert és használt beépített függvény</p><p><span class="uk-label uk-label-success">Tudtad?</span> Összesen 67 beépített <u><span uk-tooltip="title: nem egy fejlett funkció, amely a mindennapi Python programozásban van szükség.; pos: bottom; animation: uk-animation-scale-up, uk-animation-scale-down; duration: 150">nem speciális</span></u> függvény van a Pythonban?</p>
+                            <ul class="uk-list uk-list-striped">
+                                <li><code>sum(lista)</code> - Visszaadja a lista számainak összegét.</li>
+                                <li><code>range(x, y)</code> - Egy intervallumot tudunk megadni ezzel. Főképp <code>for</code> ciklusban használjuk</li>
+                                <li><code>list(xyz)</code> - Létrehoz egy új listát, melyben ugyan azok az elemek vannak mint az 'xyz' listában</li>
+                                <li><code>input('Szöveg:')</code> - Kiírja a "Szöveg:"-et és utána be tudunk írni bármit. Hogy pontos adatot kapjunk a felhasználótól ezt a függvényt átalakíthatjuk a kijelölt adattípusunkra.</li>
+                                <li><code>int(x)</code> - Egy számot sima egész számmá <code>integer</code>-ré konvertál. Amennyiben nem számot kap, hanem mást (például szöveget) akkor hibát ír</li>
+                                <li><code>float(x)</code> - Egy számot lebegõpontos (tört) számmá konvertálja.</li>
+                                <li><code>round(x, y)</code> - x lebegõpontos értékét a tizedes pont után y számjegyre kerekítve adja vissza.</li>
+                                <li><code>str(szoveg)</code> - Egy adattípust, szöveges adattípussá alakít át.</li>
+                                <li><code>len(xyz)</code> - Egy lista elemeinek számát adja vissza, vagy akár egy szövegnek a karaktereinek a számát. (len = lenght)</li>
+                                <li><code>xyz.append()</code> - Xyz listához tudunk vele új elemet hozzáfűzni.</li>
+                                <li><code>xyz.count()</code> - Megmondja, hogy a zárójelben szereplő elem hányszor fordul elő a listában.</li>
+                                <li><code>xyz.index()</code> - Visszaadja a zárójelben megadott elem első előfordulásának indexét a listában.</li>
+                                <li><code>lower()</code> - A stringet kisbetűssé alakítja. Ha eddig is kisbetűs volt, nos, annyi baj legyen!</li>
+                                <li><code>upper()</code> - A karakterlánc NAGYBETŰS változatát adja vissza. </li>
+                                <li><code>remove()</code> - A zárójelben megadott elemet kiveszi az adott listából.</li>
+                                
+                            </ul>
+                            <p><span class="uk-label uk-label-warning">Segítség</span> <a class="uk-link-muted" href="https://docs.python.org/3/library/functions.html" target="_blank" rel="noopener noreferrer"><span class="uk-margin-small-right" uk-icon="link"></span>Python dokumentáció</a></p>
+                            <h3>Feladat!</h3>
+                            <p>Csinálj a tapasztalataid alapján egy születési idő kalkulátort!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <pre class="line-numbers"><code class="language-python">xyz = [110, 100, 90]
+x = 100
+y = 110
+z = 90
+szoveg = 'Szép az időnk!'
+
+sum(lista) 
+# output: 200
+
+for x in range(1, 10)
+    print(x)
+# output: 10-szer fut le a for ciklus
+
+lista_masolata = list(lista)
+# output: A lista másolata
+
+kor = input('Hány éves vagy?')
+# output: Hány éves vagy: (és ide tudsz bármit írni)
+
+# ahhoz hogy ne egy téves értéket 
+# kapjunk az előző részhez, 
+# az inputot ebbe a függénybe írunk
+
+kor = int(input('Hány éves vagy?'))
+# output: Hány éves vagy: (csak számot tudsz ide írni)
+
+float()
+# hasonló az előzőnél csak itt 
+# tört számot is meg fogunk tudni adni
+
+str(objektum)
+# Úgyszint az előzőknél, iszont itt bármit 
+# megadhatunk viszont a számokkal 
+# nem tudunk rendesen dolgozni
+
+round(15.005, 2)
+# output: 15.01
+
+len(xyz)
+# output: 3
+
+xyz.append(120)
+# output: xyz = [110, 100, 90, 120] 
+
+xyz.count(90)
+# output: 1
+
+index(90)
+# output: 2 (a számolás 0-tól kezdődik)
+
+lower(szoveg)
+#output: 'szép az időnk!'
+
+upper(szoveg)
+#output: 'SZÉP AZ IDŐNK!'
+
+xyz.remove(100)
+# output: xyz = [110, 90, 120] 
+
+</code></pre>
+                    </div>
+                </div>
+
+                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
                             <h3>Idő és dátum</h3>
                             <p>Ismerkedjünk meg a <code>datetime</code> könyvtárral!</p>
                             <ul class="uk-list uk-list-striped">
@@ -175,28 +269,6 @@ print(f'A beadási határidő: {vegeido-idomost}')
                         </code></pre>
                     </div>
                 </div>
-                            <!--<p>A Python számos beépített függvénnyel rendelkezik, amikkel most megmutatjuk mikkel ismerkedtünk már meg ededig:<br>
-                            -sum(iterable, start=0) Visszaadja a két elem összegét. Csak szám típusú paramétert lehet neki megadni, tehát nem lehet például stringek konkatenálására használni.<br>
-                            -range(start [,end [, lépés]])A !LT= start és !GT end értékek közötti egész számokból képzett listát ad vissza értékül.Egy argumentummal, lista 0-tól ..<argumentum>-1 értékig.Két argumentummal, lista <start> értéktõl..<end>-1 értékig.Három argumentummal, lista <start> értéktõl <end> értékig <lépés>- sel.<br>
-                            -list([iterable]) Létrehoz egy új lista objektumot, amelynek az elemei ugyanazok, mint az iterable elemei.<br>
-                            -input([prompt]) Kiírja a prompt jelet, ha megadtuk. Beolvassa az input jelet és kiértékeli.<br>
-                            -int(x) Egy számot sima egész számmá (<code>int</code>) konvertál. (amennyiben nem szám, hanem pl szöveg akkor hibát ír)<br>
-                            -float(x) Az x számot lebegõpontos számmá konvertálja. Ez a függvény még akkor is hasznos, ha stringként adunk meg neki számot, vagy ha egy fájlból stringként kerül beolvasásra, de valamilyen matematikai műveletet akarunk végre hajtani rajta, szépen átkonvertálja a stringet float típussá<br>
-                            -round(x,n=0) x lebegõpontos értékét a tizedes pont után n számjegyre kerekítve adja vissza.<br>
-                            -type(objektum) Egy objektum típusát adja értékül. Például: if type(x) == type(''): print 'Ez egy sztring.'<br>
-                            -str(objektum) Egy sztring értéket ad vissza, mely egy objektum jól nyomtatható reprezentációját adja vissza.<br>
-                            -return(num, -num) A „return” kulcsszót arra használhatjuk, hogy segítségével kilépjünk a függvényből, és a főprogram azon pontjára kerüljünk vissza, ahol a hívás történt. A „return” tartalmazhat visszatérési értéket is, ami például egy számítás eredménye lehet.<br>
-                            -len(s) Len azaz lenght kiírja hány db érték van a listán, de ha stringet adunk meg annak is kiírja, hány karakterből áll, bele számolja a szóközöket is, tehát használhatjuk stringeken is és listákon is.<br>
-                            -append() - a lista adattípus tagfüggvénye.  Listához tudunk vele új elemet hozzáfűzni.<br>
-                            -count() - a lista adattípus tagfüggvénye. Megmondja, hogy a zárójelben szereplő elem hányszor fordul elő a listában.<br>
-                            -break - arra való, hogy kilépjünk egy ciklusból, még mielőtt az végigfutna.<br>
-                            -index() - lista adattípus tagfüggvénye. Visszaadja a zárójelben megadott elem első előfordulásának indexét a listában.<br>
-                            -lower() - string adattípus tagfüggvénye. A stringet kisbetűssé alakítja. Ha eddig is kisbetűs volt, nos, annyi baj legyen!<br>
-                            -upper() - string adattípus tagfüggvénye. A karakterlánc NAGYBETŰS változatát adja vissza. <br>
-                            -sorted() - a zárójelben megadott listát rendezi, és új listát ad vissza, az eredetit nem bántja. A reverse=True megadásával lehetőséged van csökkenő sorrendet kérni, és kulcsfüggvényt is adhatsz meg, amivel úgy rendezel, ahogy jól esik.<br>
-                            -reversed() - a zárójelben megadott listát vagy karakterláncot megfordítva adja vissza.<br>
-                            -remove() - nem önálló parancs, hanem a lista adattípus tagfüggvénye. A zárójelben megadott elem első előfordulását kiveszi a listából.</p>
-                            -->
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
@@ -204,7 +276,7 @@ print(f'A beadási határidő: {vegeido-idomost}')
                             <p><span class="uk-text-emphasis">Nagyszerű!</span> Ha mindent átnéztél, kipróbáltál magadnak, akkor már egész jól megy a python nyelv illetve tudod is alkalmazni egyes esetekben.<br>
                             De maradt még egy pár dolog, a python nem csak arra való, hogy az unalmas fekete fehér parancssorban lássuk az eredményeket. Tudsz még rajzolni is és rendes játékokat csinálni!<br>
                             Jobb oldalt beraktunk kettő fájlt amit kattintásra le tudsz tölteni. Mik is ezek? Leginkább példafájlok, hogy legyen egy kis ihleted, hogy mit tudsz még csinálni a python nyelv bugyraiban.<br>
-                            Használatukhoz bármilyen parancssorba írd be ezt a két parancsot: (pygame - játékkal kapcsolatos könyvtár / turtle - rajzolós könyvtár - avagy - imagine logo copy)<br>
+                            Használatához a parancssorba írd be ezt a két parancsot: (pygame - játékkal kapcsolatos könyvtár / turtle - rajzolós könyvtár - avagy - imagine logo copy)<br>
                             <code>pip install pygame</code> / <code>pip install turtle</code><br>
                             amennyiben kijátszodtad magad visszatérhetsz a programozási tételekre, amik nagyon hasznosak ha tényleg szeretnéd folytatni a python-os karrieredet.</p>
                         </div>
@@ -230,7 +302,7 @@ print(f'A beadási határidő: {vegeido-idomost}')
                 </div>
 
                 <div class="uk-margin-large uk-card uk-card-default uk-card-body">
-                    <h2 class="uk-text-center" id="grad">Prog Tételek</h2>
+                    <h2 class="uk-text-center" id="grad">Programozási Tételek</h2>
                 </div>
 
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
@@ -332,7 +404,7 @@ else:
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Kiválasztás</h3>
-                            
+                            <p>Hasonló mint az <code>Eldöntés</code> csak itt nem kell az <code>while</code> ciklusba a <code>i &lt; len(lista)</code></p>
                         </div>
                     </div>
                     <div>
@@ -349,15 +421,16 @@ print(f'{i + 1}. helyen van a keresett szám')</code></pre>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Keresés</h3>
+                            <img src="res/sketch/keres.png" alt="">
                         </div>
                     </div>
                     <div>
                         <pre class="line-numbers"><code class="language-python">lista = [3, 8, 2, 4, 5, 1, 6]
 keres = int(input('Keresett elem: '))
 
-while i &lt; ln and lista[i] != keres:
+while i &lt; lista and lista[i] != keres:
     i = i + 1
-if i &lt; ln: 
+if i &lt; lista: 
     print(f'Van "{keres}" elem, indexe: {i}')
 else:
     print('Nincs ilyen elem')</code></pre>
@@ -393,13 +466,14 @@ print(lista_kettes_szorzas)</code></pre>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Kiválogatás</h3>
+                            <img src="res/sketch/kivalogatas.png" alt="">
                         </div>
                     </div>
                     <div>
                         <pre class="line-numbers"><code class="language-python">for i in lista:
     if i &lt; 5: 
         lista2.append[i]
-p(lista2)</code></pre>
+print(lista2)</code></pre>
                     </div>
                 </div>
 
@@ -407,6 +481,7 @@ p(lista2)</code></pre>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Szétválogatás</h3>
+                            <p>Hasonló mint az <code>Kiválogatás</code> viszont itt egy <code>else</code> ágat is csinálunk amibe a maradék számokat illesztjük be.</p>
                         </div>
                     </div>
                     <div>
@@ -500,7 +575,7 @@ print(f'legkisebb szám a listában: {mini}')
                                         <p class="uk-margin-small-bottom">Projektfeladat</p>
                                         <footer id="info">Készült <cite>2022.04.04.</cite></footer>
                                     </blockquote>
-                                    <p>Ez az oldal főképp a 10. évfolyam második féléves tananyagunkat tartalmazza, programozási tételek, időkezelés és egyéb extra dolgok is belekerültek. Akik már foglalkoztak pythonnal, azoknak inkább ezt az oldalt ajánljuk és csak ismétlésnek a kezdőknek való oldalt. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/proggyak-projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-emailt erre a címre: gydoma@chromiumnetwork.com</p>
+                                    <p>Ez az oldal főképp a 10. évfolyam második féléves tananyagunkat tartalmazza, programozási tételek, időkezelés és egyéb extra dolgok is belekerültek. Akik már foglalkoztak pythonnal, azoknak inkább ezt az oldalt ajánljuk és csak ismétlésnek a kezdőknek való oldalt. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/proggyak-projekt">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-mailt erre a címre: gydoma@chromiumnetwork.com</p>
                                     <div class="uk-child-width-1-2@s" uk-grid>
                                         <p class="uk-text-center">
                                             <a href="https://chromiumnetwork.com">Chromium</a> © Copyright 2021 </p>
