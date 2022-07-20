@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/uikit.min.css">
     <link href="../css/prism.css" rel="stylesheet">
     <link href="../css/fontgrad.css" rel="stylesheet">
@@ -15,14 +16,13 @@
 <body class="match-braces uk-background uk-animation-scale-down">
     <div>
     <div class="bg-morph" data-end-color="#001515" data-start-color="008088" data-start-trigger="top" data-end-trigger="bottom" id="main">
-    <!--<div class="uk-animation-scale-down">-->
 
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-center">
         <div class="uk-navbar-center-left"><div>
             <ul class="uk-navbar-nav">
-                <li><a href="python">Python</a></li>
-                <li><a href="it">It</a></li>
+                <li><a href="../python">Python</a></li>
+                <li><a href="../it">It</a></li>
             </ul>
         </div></div>
         <a class="uk-navbar-item uk-logo" href="#"><img alt="home" src="../res/ch.png" width="32" height="32"></a>
@@ -34,13 +34,13 @@
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active">Válassz</li>
                             <li class="uk-nav-divider"></li>
-                            <li><a href="web/html">HTML</a></li>
-                            <li><a href="web/css">CSS</a></li>
-                            <li class="uk-active"><a href="web/bs">BootStrap</a></li>
+                            <li><a href="/html">HTML</a></li>
+                            <li><a href="/css">CSS</a></li>
+                            <li class="uk-active"><a href="/bs">BootStrap</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="index">Vissza</a></li>
+                <li><a href="../index">Vissza</a></li>
             </ul>
         </div></div>
     </div>
@@ -88,7 +88,6 @@
                             <pre class="line-numbers"><code class="language-python">&lt;p class=&quot;text-start&quot;&gt;Start aligned text on all viewport sizes.&lt;&#47;p&gt;
 &lt;p class=&quot;text-center&quot;&gt;Center aligned text on all viewport sizes.&lt;&#47;p&gt;
 &lt;p class=&quot;text-end&quot;&gt;End aligned text on all viewport sizes.&lt;&#47;p&gt;
-
 &lt;p class=&quot;text-sm-start&quot;&gt;Start aligned text on viewports sized SM (small) or wider.&lt;&#47;p&gt;
 &lt;p class=&quot;text-md-start&quot;&gt;Start aligned text on viewports sized MD (medium) or wider.&lt;&#47;p&gt;
 &lt;p class=&quot;text-lg-start&quot;&gt;Start aligned text on viewports sized LG (large) or wider.&lt;&#47;p&gt;
@@ -152,155 +151,95 @@
                 <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>Szöveg</h2>
-                            <p>szöveg</p>
+                            <h2>Szegélyek</a></h2>
+                            <p>A szegélyek a beállíthatók, törölhetők, színezhetők, kerekíthetők.</p>
+                            <hr class="uk-divider-icon">
+                            <div class="uk-grid-column-collapse@m uk-child-width-1-2 uk-text-center" uk-grid>
+                                <div><h3>Megadó</h3></div>
+                                <div><h3>Elvonó</h3></div>
+                                <div>border</div>
+                                <div>border-0</div>
+                                <div>.border-top</div>
+                                <div>.border-top-0</div>
+                                <div>.border-right</div>
+                                <div>.border-right-0</div>
+                                <div>.border-bottom</div>
+                                <div>.border-bottom-0</div>
+                                <div>.border-left</div>
+                                <div>.border-left-0</div>
+                            </div>
+                            <div class="uk-grid-column-collapse@m uk-child-width-1-2 uk-text-center" uk-grid>
+                                <div><h3>Színezés</h3></div>
+                                <div><h3>Lekerekítés</h3></div>
+                                <div>.border .border-primary</div>
+                                <div>.rounded</div>
+                                <div>.border .border-secondary</div>
+                                <div>.rounded-top</div>
+                                <div>.border .border-success</div>
+                                <div>.rounded-right</div>
+                                <div>.border .border-danger</div>
+                                <div>.rounded-bottom</div>
+                                <div>.border .border-warning</div>
+                                <div>.rounded-left</div>
+                                <div>.border .border-info</div>
+                                <div>.rounded-circle</div>
+                                <div>.border .border-light</div>
+                                <div>.rounded-0</div>
+                                <div>border .border-dark</div>
+                                <div></div>
+                                <div>.border .border-white</div>
+                            </div>
+                        <hr class="uk-divider-icon">
+                        <p><span class="uk-label uk-label-warning">Jó tudni!</span>ezeket a szövegedbe bármikor beletudod illeszteni a class megadásával.</p>
                         </div>
                     </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">Szöveg
-</code></pre>
-                    </div>
-                </div>
-                
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg  <span class="uk-label uk-label-danger">szöveg</span></h2>
-                            <p>szöveg</p>
+                            <h2>Ikonok</h2>
+                            <p>Az ikonok BootStrap-ben, verzionként változik.</p>
+                            <h3>BootStrap 3</h3>
+                            <p>Az ikonok használatához a glyphicon osztályra van szükségünk. Ez az osztály csak a bootstrap 3-as verzióig támogatott, a 4-es verzióban már nem használhatjuk. Természetesen az ikonokat több elemre is rá lehet tenni, például gombokra. Ilyenkor az ikont &lt;span>&lt;/span> elemre tesszük</p>
+                            <div class="container">
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Keresés</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span> Lejátszás</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-new-window"></span> Új ablak</button>
+                            </div>
+                            <div>
+                                <pre class="line-numbers"><code class="language-python"><div class="container">&lt;button type="button" class="btn btn-default"&gt;&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt; Keresés&lt;/button&gt;
+&lt;button type="button" class="btn btn-default"&gt;&lt;span class="glyphicon glyphicon-play"&gt;&lt;/span&gt; Lejátszás&lt;/button&gt;
+&lt;button type="button" class="btn btn-default"&gt;&lt;span class="glyphicon glyphicon-new-window"&gt;&lt;/span&gt; Új ablak&lt;/button&gt;</div></code></pre>
+                        </div>
+                            <h3>BootStrap 5</h3>
+                            <p>BootStrap 5-ben az ikonokat (<a  href="https://icons.getbootstrap.com/" target="_blank">NPM-eket</a>) letöltjük vagy belinkeljük.</p>
+                            <div>
+                                <pre class="line-numbers"><code class="language-python"><div class="container">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"&gt;</div></code></pre>
+                            </div>
+                            <p>A már letöltött vagy belinkelt ikonokat használhatjuk, akár színezve is.</p>
+                            <h1><i class="bi-alarm"></i> Fejléc</h1>
+                            <h3><i class="bi-alarm" style="color: rgb(205, 226, 19);"></i> Kisebbb fejléc</h3>
+                            <p>Szöveg <i class="bi-alarm" style="color: rgb(180, 20, 20);"></i> között </p>
+                            <p><a href="https://github.com/twbs/icons/releases/tag/v1.8.3">Akár linkekben is <i class="bi-alarm"></i></a></p>
+                            <button type="button"><i class="bi-apple"></i> Ja ez egy gomb</button>
+                            <div>
+                                <pre class="line-numbers"><code class="language-python"><div class="container">&lt;h1>&lt;i class="bi-alarm">&lt;/i> Fejléc&lt;/h1>
+&lt;h3>&lt;i class="bi-alarm" style="color: rgb(205, 226, 19);">&lt;/i> Kisebbb fejléc&lt;/h3>
+&lt;p>Szöveg&lt;i class="bi-alarm" style="color: rgb(180, 20, 20);">&lt;/i> között&lt;/p>
+&lt;p>&lt;a href="https://github.com/twbs/icons/releases/tag/v1.8.3">Akár linkekben is &lt;i class="bi-alarm">&lt;/i>&lt;/a>&lt;/p>
+&lt;button type="button"&gt;&lt;i class="bi-apple">&lt;/i> Ja ez egy gomb&lt;/button></div></code></pre>
+                            </div>
+                            <hr class="uk-divider-icon">
+                            <p><span class="uk-label uk-label-warning">Jó tudni!</span> az ikonok sokoat segíthetnek a weboldalon való navigációban.</p>
+                        </div>
                         </div>
                     </div>
-                    <div>
-                            <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
+                    <div class="uk-card uk-card-default uk-card-body uk-margin-small uk-text-center uk-margin-medium">
+                        <p>A Bootsrap verziói között sok változtatás van, a legfontosabb a reszponzívitásért (layout manager) felelős részét megjegyezni. A többit verzionként változhat, de az egyszerű osztály jelölőkből is érdemes párat tudni, mert megkönnyitheti az életedet. A többi csak részlet kérdése.</p>
                     </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg</h2>
-                            <p>szöveg</p>
-                            <span class="uk-label">szöveg</span>
-                            <p>szöveg</p>
-                        
-                                <dl class="uk-description-list">
-                                    <dt>szöveg</dt>
-                                    <dd>szöveg</dd>
-                                </dl>
-                                <ul class="uk-list uk-list-disc">
-                                    <li>szöveg</li>
-                                    <li>szöveg</li>
-                                    <li>szöveg</li>
-                                    <li>szöveg</li>
-                                </ul>
-
-                                <dl class="uk-description-list">
-                                    <dt>szöveg</dt>
-                                    <dd>szöveg</dd>
-                                </dl>
-                                <ul class="uk-list uk-list-disc">
-                                    <li>szöveg</li>
-                                    <li>szöveg</li>
-                                    <li>szöveg</li>
-                                </ul>
-
-                                <dl class="uk-description-list">
-                                    <dt>szöveg</dt>
-                                    <dd>szöveg</dd>
-                                </dl>
-                                <ul class="uk-list uk-list-disc">
-                                    <li>szöveg</li>
-                                </ul>                              
-
-                                <dl class="uk-description-list">
-                                    <dt>szöveg</dt>
-                                    <dd>szöveg</dd>
-                                </dl>  
-                                <p>szöveg</p> 
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-<pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-<pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-<pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg</h2>
-                            <p>szöveg</p>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg</h2>
-                            <p>szöveg</p>
-                        </div>
-                    </div>
-                    <div>
-                            <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg</h2>
-                            <p>szöveg</p>
-                            <p>szöveg</p>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg</h2>
-                            <p>szöveg</p>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-
-
-
-                <div class="uk-child-width-expand@m uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">
-                            <h2>szöveg <span class="uk-label uk-label-danger">szöveg</span></h2>
-                            <h3>szöveg</h3>
-                            <p>szöveg</p>
-                            <p>szöveg <cite>[1. szöveg]</cite></p>
-                            <p>szöveg</p>
-                            <p>szöveg <code>szöveg</code> szöveg</p>
-                            <hr>
-                            <h3>szöveg</h3>
-                            <p>szöveg <b>szöveg</b> szöveg <cite>[2. szöveg]</cite></p>
-                            <p>szöveg <cite>[3. szöveg]</cite></p>
-                            <p>szöveg</p>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class="line-numbers"><code class="language-python">szöveg</code></pre>
-                    </div>
-                </div>
-                
                         <div class="uk-card uk-card-default uk-card-body uk-margin-medium">
                             <h2><a href="../"><span uk-icon="icon: chevron-double-left"></span> Vissza a főoldalra</a></h2>
                         </div>
+                </div>
+
                 
 
 
@@ -312,7 +251,7 @@
                                     <h2 class="uk-card-title uk-text-center">Információ</h2>
                                     <blockquote cite="#">
                                         <p class="uk-margin-small-bottom">Projektfeladat</p>
-                                        <footer id="info">Készült <cite>2022. 05. 31.</cite></footer>
+                                        <footer id="info">Készült <cite>2022. 06. 02.</cite></footer>
                                     </blockquote>
                                     <p>Ezen az oldalon megtalálhatod a bootstrap keretrendszer alapjait. Próbálkoztam a legigényesebben megoldani a kiadott feladatomat és remélem te is tudtál tanulni az anyagból. Az oldalt megtalálhatod a <span uk-icon="icon: github-alt"></span> <a href="https://github.com/gydoma/proggyak-projekt" target="_blank">Github</a> oldalon is. Amennyiben bármilyen kérdésed lenne, küldj egy e-mailt erre a címre: gydoma@chromiumnetwork.com</p>
                                     <div class="uk-child-width-1-2@s" uk-grid>
@@ -324,9 +263,9 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </footer>
+
             </div>
         </div>
     </div>

@@ -145,7 +145,7 @@ ar = festek_kalkulator(5, 2) * 700
                             <h2>6.3 Beépített függvények</h2>
                             <p>A Python számos beépített függvénnyel rendelkezik, ezeket a Python telepítésével azonnal tudjuk használni.</p><p>Az alábbi listában található az összes általunk ismert és használt beépített függvény</p><p><span class="uk-label uk-label-success">Tudtad?</span> Összesen 67 beépített <u><span uk-tooltip="title: nem egy fejlett funkció, amely a mindennapi Python programozásban van szükség.; pos: bottom; animation: uk-animation-scale-up, uk-animation-scale-down; duration: 150">nem speciális</span></u> függvény van a Pythonban?</p>
                             <ul class="uk-list uk-list-striped">
-                                <li><code>sum(lista)</code> - Visszaadja a lista számainak összegét.</li>
+                                <li><code>sum(xyz)</code> - Visszaadja az xyz lista számainak összegét.</li>
                                 <li><code>range(x, y)</code> - Egy intervallumot tudunk megadni ezzel. Főképp <code>for</code> ciklusban használjuk</li>
                                 <li><code>list(xyz)</code> - Létrehoz egy új listát, melyben ugyan azok az elemek vannak mint az 'xyz' listában</li>
                                 <li><code>input('Szöveg:')</code> - Kiírja a "Szöveg:"-et és utána be tudunk írni bármit. Hogy pontos adatot kapjunk a felhasználótól ezt a függvényt átalakíthatjuk a kijelölt adattípusunkra.</li>
@@ -175,7 +175,7 @@ z = 90
 szoveg = 'Szép az időnk!'
 
 sum(lista) 
-# output: 200
+# output: 300
 
 for x in range(1, 10)
     print(x)
@@ -192,7 +192,7 @@ kor = input('Hány éves vagy?')
 # az inputot ebbe a függénybe írunk
 
 kor = int(input('Hány éves vagy?'))
-# output: Hány éves vagy: (csak számot tudsz ide írni)
+# output: Hány éves vagy: (csak intet    tudsz ide írni)
 
 float()
 # hasonló az előzőnél csak itt 
@@ -512,6 +512,7 @@ print(c)</code></pre>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Unió</h3>
+                            <!-- <img src="res/uniotetel.png" alt=""> -->
                         </div>
                     </div>
                     <div>
@@ -528,6 +529,7 @@ print(c)</code></pre>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
                             <h3>Szélsőérték</h3>
+                            <img src="res/sketch/szelso.png" alt="">
                         </div>
                     </div>
                     <div>
@@ -538,12 +540,16 @@ maxi = 0
 for x in range(len(lista)):
     if lista[x]&lt;mini:
         mini=lista[x]
+
 for x in range(len(lista)):
     if lista[x]&gt;maxi:
         maxi=lista[x] 
-print(f'legnagyobb szám a listában: {maxi}')
+
 print(f'legkisebb szám a listában: {mini}')
-                        </code></pre>
+# output: 1
+
+print(f'legnagyobb szám a listában: {maxi}')
+# output: 8</code></pre>
                     </div>
                 </div>
                 
@@ -590,13 +596,13 @@ print(f'legkisebb szám a listában: {mini}')
                             <div class="uk-card uk-card-default uk-card-small uk-card-body uk-grid-item-match">
                                 <h2 class="uk-card-title">Készítette</h2>
                                 <ul class="uk-list uk-list-striped">
-                                    <li>Balogh Tamás <span class="uk-label uk-label-danger">-</span></li>
+                                    <li>Balogh Tamás <span class="uk-label uk-label-danger">2</span></li>
                                     <li>Digruber Eszter <span class="uk-label uk-label-success">5</span></li>
                                     <li>Digruber Emese <span class="uk-label uk-label-success">5</span></li>
                                     <li>Gyurkovics Dominik <span class="uk-text-muted"><u></u>Projektvezető</span> <span class="uk-label uk-label-success">5</span></li>
-                                    <li>Kerti János <span class="uk-label uk-label-danger">-</span></li>
-                                    <li>Kósa Márk <span class="uk-label-danger uk-label">-</span></li>
-                                    <li>Varga Jázmin <span class="uk-label uk-label-danger">-</span></li>
+                                    <li>Kerti János <span class="uk-label uk-label-danger">2</span></li>
+                                    <li>Kósa Márk <span class="uk-label-warning uk-label">3</span></li>
+                                    <li>Varga Jázmin <span class="uk-label uk-label-warning">4</span></li>
                                     <li class="uk-text-muted"><del>Kormon Kitty</del></li>
                                 </ul>
                             </div>
