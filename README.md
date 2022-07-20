@@ -9,8 +9,11 @@
 IKT Projektmunka 10. Évfolyam
 A projektmunkánkat a weboldalamon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
 
+## Projekt lezárásának időpontja: 2022 Április 4.
+## Végleges lezárás: Időpontja ismeretlen.
 
 A TO-DO LISTA Átköltözött az "issues" részbe!!!!!
+
 
 ## Python
 
