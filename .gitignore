@@ -2,3 +2,4 @@ python copy.html
 .htaccess
 #SASS és SCSS fájlok konfigurálása, témák készítése
 /uikit
+themer.scss
