@@ -6,48 +6,31 @@
 [![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
-IKT Projektmunka 10. Évfolyam
+IKT Projektmunka 2021/22 10. Évfolyam
 A projektmunkánkat a weboldalamon is megtalálhatod [ITT](https://chromiumnetwork.com/projektmunka/)
 
-## Projekt lezárásának időpontja: 2022 Április 4.
-## Végleges lezárás: Időpontja ismeretlen.
+# Projekt lezárásának időpontja: 2022 Április 4. - Archiválva: 2023 Január 30.
 
-A TO-DO LISTA Átköltözött az "issues" részbe!!!!!
+## Készítették:
 
+| Név | Témakör|
+| ------ | ------ |
+| Gyurkovics Dominik | * Python|
+| Juhász Zoltán | ** |
+| Digruber Eszter | Python |
+| Digruber Emese | Python |
+| Kerti János | Python |
+| ~Kormon Kitty~ | ~Python~ |
+| Kósa Márk | Python |
+| Varga Jázmin | Python |
+| Dávid Benedek | Web |
+| Fehér Levente | Web |
+| Laczkó Andris | Web |
+| Dobos Martin  | IT |
+| Dancs Márk | IT |
+| Gáspár Lajos | IT |
+| Győri Botond | IT |
 
-## Python
+\* = [Projektvezető]
 
-Készítette:
-
-- Balogh Tamás
-- Digruber Eszter
-- Digruber Emese
-- Gyurkovics Dominik: Projektvezető
-- Kerti János
-- ~Kormon Kitty~
-- Kósa Márk
-- Varga Jázmin
-
-## Web
-
-Készítette:
-
-- Dávid Benedek
-- Fehér Levente
-- Laczkó Andris
-
-## IT
-
-Készítette:
-
-- Dobos Martin 
-- Dancs Márk 
-- Gáspár Lajos
-- Győri Botond
-
-## Hálózat ismeretek 
-
-Készítette:
-
-- x
-
+** = [Segítő - Tanár]
